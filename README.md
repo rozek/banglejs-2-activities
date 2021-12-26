@@ -8,14 +8,19 @@ This repository documents a series of studies and experiments conducted by the a
 
 ## Overview ##
 
+<table>
+ <tr>
+   <td><img src="Colors/BasicColors.png"><br><a href="#BasicColors">Basic Colors</a><td>
+ </tr>
+</table>
+
 
 ### Basic Colors ###
 
-<img align="left" src="Colors/BasicColors.png">
+<img src="Colors/BasicColors.png">
 
 Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering.
 
-<br>&nbsp;<br>
 
 
 
