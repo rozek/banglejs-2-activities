@@ -18,9 +18,12 @@ Unless otherwise described, any source code should be copied into the clipboard 
  <tr>
    <td align="center"><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a></td>
    <td align="center"><img src="Colors/Mandelbrot_176x176.png"><br><a href="#bitmap-preparation">Bitmap Preparation</a></td>
+   <td align="center"><img src="Colors/HalfColors.png"><br><a href="#half-colors">"Half Colors"</a></td>
+   <td align="center"><img src="Colors/QuarterColors.png"><br><a href="#quarter-colors">"Quarter Colors"</a></td>
  </tr>
 </table>
 
+## Actual Activities ##
 
 ### Basic Colors ###
 
@@ -37,6 +40,22 @@ When it comes to preparing a bitmap for being shown on a Bangle.js 2 display, th
 However, this step also has its limitations, as shown in the following [test image](https://en.wikipedia.org/wiki/Lenna):
 
 ![](Colors/Lenna-TestImage.png)
+
+### "Half Colors" ###
+
+Forum user "Numerist" suggested to use RGB channel values 0.5 in addition to the natively supported values 0.0 and 1.0 in programs as the dithering algorithm built into the Bangle.js 2 seemed to produce acceptable results:
+
+![](Colors/HalfColors.png)
+
+You may try yourself with this little [code snippet](Colors/HalfColors.js).
+
+### "Quarter Colors" ###
+
+While "Half Colors" still look acceptable, the next refinement step ("Quarter Colors") no longer produces good looking results:
+
+![](Colors/QuarterColors.png)
+
+[Try yourself](Colors/QuarterColors.js).
 
 
 ## License ##
