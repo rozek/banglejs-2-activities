@@ -31,6 +31,8 @@ Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colo
 
 When it comes to preparing a bitmap for being shown on a Bangle.js 2 display, the converter built into the Web IDE's "Device Storage" manager does a remarkably good job (given the constraints it is suffering from)
 
+![](Colors/BitmapPreparation.png)
+
 
 ## License ##
 
