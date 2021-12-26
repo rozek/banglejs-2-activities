@@ -11,9 +11,10 @@ This repository documents a series of studies and experiments conducted by the a
 
 ### Basic Colors ###
 
-<img src="Colors/BasicColors.png" style="float:left">
+| ![](/Colors/BasicColors.png) | Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering
+ |
 
-Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering
+
 
 
 ## License ##
