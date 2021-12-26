@@ -46,6 +46,8 @@ However, this step also has its limitations, as shown in the following [test ima
 
 ![](Colors/Lenna-TestImage.png)
 
+Flat gradients seem to cause problems, but detailed areas come out quite well.
+
 ### "Half Colors" ###
 
 Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the natively supported values 0.0 and 1.0 in programs as the dithering algorithm built into the Bangle.js 2 seemed to produce acceptable results:
