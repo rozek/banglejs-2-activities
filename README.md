@@ -21,6 +21,9 @@ Unless otherwise described, any source code should be copied into the clipboard 
    <td align="center"><img src="Colors/HalfColors.png"><br><a href="#half-colors">"Half Colors"</a></td>
    <td align="center"><img src="Colors/QuarterColors.png"><br><a href="#quarter-colors">"Quarter Colors"</a></td>
  </tr>
+ <tr>
+   <td align="center"><img src="Colors/ColorWheel.png"><br><a href="#color-wheel">Color Wheel</a></td>
+ </tr>
 </table>
 
 ## Actual Activities ##
@@ -59,6 +62,26 @@ While "Half Colors" still look acceptable, the next refinement step ("Quarter Co
 
 [Try yourself](Colors/QuarterColors.js).
 
+### Color Wheel ###
+
+Because of a need for a series of different colors, the author made this little "color wheel":
+
+![](Colors/ColorWheel.png)
+
+You may try yourself with this little [code snippet](Colors/ColorWheel.js).
+
+Again there is also a [touchable version](Colors/ColorWheel-touchable.js) which displays the internal hexdecimal code of any touched color:
+
+![](Colors/ColorWheel-touchable-1.png)
+![](Colors/ColorWheel-touchable-2.png)
+
+The whole screen is touchable:
+
+* touch outside the wheel for "black"
+* touch inside the wheel for "white"
+* touch on any segment of the wheel for the shown color.
+
+This version also exists as a small Bengle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
 
 ## License ##
 
