@@ -10,7 +10,7 @@ This repository documents a series of studies and experiments conducted by the a
 
 <table>
  <tr>
-   <td><img src="Colors/BasicColors.png"><br><a href="#BasicColors">Basic Colors</a><td>
+   <td><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a><td>
  </tr>
 </table>
 
