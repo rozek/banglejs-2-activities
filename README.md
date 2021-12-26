@@ -17,6 +17,7 @@ Unless otherwise described, any source code should be copied into the clipboard 
 <table>
  <tr>
    <td align="center"><img src="Colors/BasicColors.png" width="100" height="100"><br><a href="#basic-colors">Basic Colors</a><td>
+   <td align="center"><img src="Colors/Mandelbrot_176x176.png" width="100" height="100"><br><a href="#bitmap-preparation">Bitmap Preparation</a><td>
  </tr>
 </table>
 
