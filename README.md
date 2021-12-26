@@ -43,7 +43,7 @@ However, this step also has its limitations, as shown in the following [test ima
 
 ### "Half Colors" ###
 
-Forum user "Numerist" suggested to use RGB channel values 0.5 in addition to the natively supported values 0.0 and 1.0 in programs as the dithering algorithm built into the Bangle.js 2 seemed to produce acceptable results:
+Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the natively supported values 0.0 and 1.0 in programs as the dithering algorithm built into the Bangle.js 2 seemed to produce acceptable results:
 
 ![](Colors/HalfColors.png)
 
