@@ -15,7 +15,7 @@ This repository documents a series of studies and experiments conducted by the a
 
 Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering.
 
-<img align="clear" src="Colors/BasicColors.png">
+<br>&nbsp;<br>
 
 
 
