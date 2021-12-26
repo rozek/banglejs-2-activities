@@ -16,7 +16,7 @@ Unless otherwise described, any source code should be copied into the clipboard 
 
 <table>
  <tr>
-   <td><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a><td>
+   <td align="center"><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a><td>
  </tr>
 </table>
 
