@@ -18,6 +18,8 @@
   g.setFont12x20();
 
   Bangle.on('touch', function (Button,Position) {
+    Bangle.buzz();
+    
     let x = Math.floor(Position.x / PatchWidth);
     let y = Math.floor(Position.y / PatchHeight);
 
