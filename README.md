@@ -14,6 +14,8 @@ Unless otherwise described, any source code should be copied into the clipboard 
 
 ## Overview ##
 
+**Color Handling**
+
 <table>
  <tr>
    <td align="center"><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a></td>
@@ -26,7 +28,7 @@ Unless otherwise described, any source code should be copied into the clipboard 
  </tr>
 </table>
 
-## Actual Activities ##
+## Color Handling ##
 
 ### Basic Colors ###
 
@@ -81,7 +83,7 @@ The whole screen is touchable:
 * touch inside the wheel for "white"
 * touch on any segment of the wheel for the shown color.
 
-This version also exists as a small Bengle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
+This version also exists as a small Bangle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
 
 ## License ##
 
