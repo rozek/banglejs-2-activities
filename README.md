@@ -14,7 +14,7 @@ Unless otherwise described, any source code should be copied into the clipboard 
 
 ## Overview ##
 
-**Color Handling**
+### Color Handling ###
 
 <table>
  <tr>
