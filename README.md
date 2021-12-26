@@ -23,6 +23,7 @@ Unless otherwise described, any source code should be copied into the clipboard 
  </tr>
 </table>
 
+## Actual Activities ##
 
 ### Basic Colors ###
 
@@ -49,6 +50,12 @@ Forum user "Numerist" suggested to use RGB channel values 0.5 in addition to the
 You may try yourself with this little [code snippet](Colors/HalfColors.js).
 
 ### "Quarter Colors" ###
+
+While "Half Colors" still look acceptable, the next refinement step ("Quarter Colors") no longer produces good looking results:
+
+![](Colors/QuarterColors.png)
+
+[Try yourself](Colors/QuarterColors.js).
 
 
 ## License ##
