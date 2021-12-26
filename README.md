@@ -49,6 +49,8 @@ Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the 
 
 You may try yourself with this little [code snippet](Colors/HalfColors.js).
 
+Forum user HughB suggested to make the color patches touchable and display the hexadecimal color code of any touched patch - et voilá, [here it comes](Colors/HalfColors-touchable.js)!
+
 ### "Quarter Colors" ###
 
 While "Half Colors" still look acceptable, the next refinement step ("Quarter Colors") no longer produces good looking results:
