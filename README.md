@@ -34,6 +34,10 @@ When it comes to preparing a bitmap for being shown on a Bangle.js 2 display, th
 
 ![](Colors/BitmapPreparation.png)
 
+However, this step also has its limitations, as shown in the following [test image](https://en.wikipedia.org/wiki/Lenna):
+
+![](Colors/Lenna-TestImage.png)
+
 
 ## License ##
 
