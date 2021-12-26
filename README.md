@@ -18,8 +18,8 @@ Unless otherwise described, any source code should be copied into the clipboard 
  <tr>
    <td align="center"><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a></td>
    <td align="center"><img src="Colors/Mandelbrot_176x176.png"><br><a href="#bitmap-preparation">Bitmap Preparation</a></td>
-   <td align="center"><img src="Colors/HalfColors.png"><br><a href="#half colors">"Half Colors"</a></td>
-   <td align="center"><img src="Colors/QuarterColors.png"><br><a href="#quarter colors">"Quarter Colors"</a></td>
+   <td align="center"><img src="Colors/HalfColors.png"><br><a href="#half-colors">"Half Colors"</a></td>
+   <td align="center"><img src="Colors/QuarterColors.png"><br><a href="#quarter-colors">"Quarter Colors"</a></td>
  </tr>
 </table>
 
