@@ -25,10 +25,11 @@ Unless otherwise described, any source code should be copied into the clipboard 
 
 <img src="Colors/BasicColors.png">
 
-Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering. [This little snippet](Colors/BasicColors.js) shows them.
+Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering. [This little snippet](Colors/BasicColors.js) lists them.
 
+### Bitmap Preparation ###
 
-
+When it comes to preparing a bitmap for being shown on a Bangle.js 2 display, the converter built into the Web IDE's "Device Storage" manager does a remarkably good job (given the constraints it is suffering from)
 
 
 ## License ##
