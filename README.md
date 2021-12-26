@@ -17,7 +17,6 @@ Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colo
 
 <img align="clear" src="Colors/BasicColors.png">
 
-<div style="float:clear"></div>
 
 
 
