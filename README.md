@@ -32,7 +32,9 @@ Most "activities" come with some source code. Unless otherwise noted, this code 
 
 <img align="left" src="Colors/BasicColors.png">
 
-Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering. [This little snippet](Colors/BasicColors.js) lists them.
+Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering.
+
+The underlying [source code](Colors/BasicColors.js) may be run both in the emulator and on a real device.
 
 <br clear="left">
 
