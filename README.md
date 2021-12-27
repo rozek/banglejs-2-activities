@@ -6,7 +6,7 @@ The [Bangle.js 2](https://www.espruino.com/Bangle.js2) is the second iteration o
 
 This repository documents a series of studies and experiments conducted by the author in the course of developing an application for the Bangle.js 2 - looking at the discussions in the [Espruino forum](http://forum.espruino.com/microcosms/1424/), their outcome may be of interest to other people as well.
 
-## Usage ##
+### Usage ###
 
 Most "activities" come with some source code. Unless otherwise noted, this code may directly be loaded into the Espruino Web IDE - either for the [Bangle.js 2 emulator](https://www.espruino.com/ide/emulator.html) or for [a real device](https://www.espruino.com/ide).
 
