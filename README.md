@@ -138,7 +138,7 @@ Now that we know that we should avoid intensity gradients on a Bangle.js 2, the 
 
 
 
-Again, here are the similar images generated using 24-bit graphics in the process of being converted to 3-bit colors:
+Again, here are similar images generated using 24-bit graphics in the process of being converted to 3-bit colors:
 
 ![](Colors/ColorStripe-Conversion.png)
 ![](Colors/ColorDisc-Conversion.png)
