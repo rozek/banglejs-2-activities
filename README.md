@@ -178,7 +178,7 @@ As before, here is again a similar image generated using 24-bit graphics while b
 
 ### Color Discs ###
 
-The promising outcome of the previous experiment arouses interest in further studies:
+The promising outcome of the previous experiment immediately arouses interest in further studies:
 
 <img align="left" src="Colors/ColorDisc-24-4Steps.png">
 
