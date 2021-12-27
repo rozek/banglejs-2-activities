@@ -8,7 +8,7 @@ This repository documents a series of studies and experiments conducted by the a
 
 ## Usage ##
 
-All "activities" come with their source code - many of them may already be run in the [Espruino emulator](https://www.espruino.com/ide/emulator.html), others require a real device.
+Most "activities" come with some source code - many of them may already be run in the [Espruino emulator](https://www.espruino.com/ide/emulator.html), others require a real device.
 
 Unless otherwise described, any source code should be copied into the clipboard and then pasted into the editor on the right side of the [Espruino Web IDE](https://www.espruino.com/ide). From there, it may now be uploaded to the (real or virtual) smartwatch and executed.
 
