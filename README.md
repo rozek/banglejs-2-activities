@@ -56,7 +56,7 @@ Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the 
 
 <img align="left" src="Colors/HalfColors.png">
 
-The underlying [source code](Colors/HalfColors.js) may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js).
+The [source code](Colors/HalfColors.js) for this example may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js).
 
 Please note that increasing the color resolution (from 8 to 27) comes at a price, namely the decrease of spatial resolution. The actual resolution loss depends very much on what you draw on the screen, but it may well halve your effectively usable screen size to 88x88 pixels.
 
@@ -78,7 +78,7 @@ While "Half Colors" still look acceptable, the next refinement step ("Quarter Co
 
 <img align="left" src="Colors/QuarterColors.png">
 
-[Try yourself](Colors/QuarterColors.js).
+The [source code](Colors/QuarterColors.js) for this example may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/QuarterColors.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/QuarterColors.js).
 
 <br clear="left">
 
@@ -88,7 +88,7 @@ Because of a need for a series of different colors, the author made this little 
 
 <img align="left" src="Colors/ColorWheel.png">
 
-You may try yourself with this little [code snippet](Colors/ColorWheel.js).
+The underlying [source code](Colors/ColorWheel.js) may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel.js).
 
 <br clear="left">
 
