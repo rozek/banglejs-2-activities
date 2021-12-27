@@ -25,7 +25,7 @@ Most "activities" come with some source code. Unless otherwise noted, this code 
  </tr>
  <tr>
    <td align="center"><img src="Colors/ColorWheel.png"><br><a href="#color-wheel">Color Wheel</a></td>
-   <td align="center"><img src="Colors/ColorWedge-toBlack.png"><br><a href="#color-wedges">Color Wedges</a></td>
+   <td align="center"><img src="Colors/ColorWedge-to-black.png"><br><a href="#color-wedges">Color Wedges</a></td>
  </tr>
 </table>
 
@@ -112,8 +112,8 @@ This version also exists as a small Bangle.js 2 [application](https://rozek.gith
 
 ### Color Wedges ###
 
-<img align="left" src="Colors/ColorWedge-toBlack.png">
-<img align="left" src="Colors/ColorWedge-toWhite.png">
+<img align="left" src="Colors/ColorWedge-to-black.png">
+<img align="left" src="Colors/ColorWedge-to-white.png">
 
 
 ## License ##
