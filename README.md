@@ -54,32 +54,38 @@ Flat gradients seem to cause problems, but detailed areas come out quite well.
 
 Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the natively supported values 0.0 and 1.0 in programs as the dithering algorithm built into the Bangle.js 2 seemed to produce acceptable results:
 
-![](Colors/HalfColors.png)
+<img align="left" src="Colors/HalfColors.png">
 
 You may try yourself with this little [code snippet](Colors/HalfColors.js).
 
 Forum user "HughB" suggested to make the color patches touchable and display the hexadecimal color code of any touched patch - et voilá, [here it comes](Colors/HalfColors-touchable.js)!
 
+<br clear="left">
+
 ### "Quarter Colors" ###
 
 While "Half Colors" still look acceptable, the next refinement step ("Quarter Colors") no longer produces good looking results:
 
-![](Colors/QuarterColors.png)
+<img align="left" src="Colors/QuarterColors.png">
 
 [Try yourself](Colors/QuarterColors.js).
+
+<br clear="left">
 
 ### Color Wheel ###
 
 Because of a need for a series of different colors, the author made this little "color wheel":
 
-![](Colors/ColorWheel.png)
+<img align="left" src="Colors/ColorWheel.png">
 
 You may try yourself with this little [code snippet](Colors/ColorWheel.js).
 
+<br clear="left">
+
 Again there is also a [touchable version](Colors/ColorWheel-touchable.js) which displays the internal hexdecimal code of any touched color:
 
-![](Colors/ColorWheel-touchable-1.png)
-![](Colors/ColorWheel-touchable-2.png)
+<img align="left" src="Colors/ColorWheel-touchable-1.png">
+<img align="left" src="Colors/ColorWheel-touchable-2.png">
 
 The whole screen is touchable:
 
@@ -88,6 +94,8 @@ The whole screen is touchable:
 * touch on any segment of the wheel for the shown color.
 
 This version also exists as a small Bangle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
+
+<br clear="left">
 
 ## License ##
 
