@@ -142,7 +142,7 @@ The theory behind this conversion may be found in [Wikipedia](https://en.wikiped
 
 <img align="left" src="Colors/ColorWheel-6Steps.png">
 
-The first example shows these "pure" colors at their respective angles.
+The first example shows these "pure" colors at their corresponding angles.
 
 You may run the [source code](Colors/ColorWheel-6Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-6Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-6Steps.js).
 
