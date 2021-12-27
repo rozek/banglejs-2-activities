@@ -155,6 +155,8 @@ The next example shows stripes of colors with hues randing from 0 to 1 at differ
 
 The underlying [source code](Colors/ColorStripes.js) may also be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorStripes.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorStripes.js).
 
+The result looks surprisingly good - although you should presumably restrict yourself to using 24 different hue values at most (the second bottom line displays 24 different hue values whereas the bottommost one shows 176)
+
 <br clear="left">
 &nbsp;<br>
 
