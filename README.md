@@ -94,20 +94,20 @@ The underlying [source code](Colors/ColorWheel.js) may be run both in the [emula
 
 <br clear="left">
 
-Again there is also a [touchable version](Colors/ColorWheel-touchable.js) which displays the internal hexdecimal code of any touched color:
+Again there is also a [touchable version](Colors/ColorWheel-touchable.js) (both for the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-touchable.js) and a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-touchable.js)) which displays the internal hexdecimal code of any touched color:
 
 <img align="left" src="Colors/ColorWheel-touchable-1.png">
 <img align="left" src="Colors/ColorWheel-touchable-2.png">
 
 The whole screen is touchable:
-
-* touch outside the wheel for "black"
-* touch inside the wheel for "white"
-* touch on any segment of the wheel for the shown color.
-
-This version also exists as a small Bangle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
+<br>
+&nbsp; • touch outside the wheel for "black"<br>
+&nbsp; • touch inside the wheel for "white"<br>
+&nbsp; • touch on any segment of the wheel for the shown color.
 
 <br clear="left">
+
+This version also exists as a small Bangle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
 
 ## License ##
 
