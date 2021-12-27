@@ -100,14 +100,14 @@ Again there is also a [touchable version](Colors/ColorWheel-touchable.js) (both 
 <img align="left" src="Colors/ColorWheel-touchable-2.png">
 
 The whole screen is touchable:
-<br>
+<br>&nbsp;<br>
 &nbsp; • touch outside the wheel for "black"<br>
 &nbsp; • touch inside the wheel for "white"<br>
 &nbsp; • touch on any segment of the wheel for the shown color.
 
-<br clear="left">
-
 This version also exists as a small Bangle.js 2 [application](https://rozek.github.io/BangleApps/) - just look for "ColorWheel"
+
+<br clear="left">
 
 ## License ##
 
