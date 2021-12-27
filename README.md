@@ -130,6 +130,8 @@ In order to be able to assess the problem properly, here are the same images gen
 ![](Colors/ColorWedge-toBlack_Conversion.png)
 ![](Colors/ColorWedge-toWhite_Conversion.png)
 
+As one can see, the results of the built-in dithering come pretty close to what you may expect using off-line dithering. Or, in other words, don't try to use color wedges...
+
 ## License ##
 
 [MIT License](LICENSE.md)
