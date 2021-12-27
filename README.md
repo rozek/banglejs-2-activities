@@ -169,9 +169,26 @@ As usual, you may run the [source code](Colors/ColorWheel-24Steps.js) both in th
 <br clear="left">
 &nbsp;<br>
 
-Again, here are similar images generated using 24-bit graphics in the process of being converted to 3-bit colors:
+As before, here is again a similar image generated using 24-bit graphics while being converted to 3-bit colors:
 
 ![](Colors/ColorStripe-Conversion.png)
+
+### Color Discs ###
+
+This promising outcome of the previous experiment arouses interest in further studies:
+
+<img align="left" src="Colors/ColorDisc-24-4Steps.png">
+
+This example shows a color disc with 24 different hue and 4 different brightness values.
+
+You may run the [source code](Colors/ColorDisc-24-4Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-24-4Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-24-4Steps.js).
+
+<br clear="left">
+&nbsp;<br>
+
+
+As usual, here is a similar image generated using 24-bit graphics while being converted to 3-bit colors:
+
 ![](Colors/ColorDisc-Conversion.png)
 
 
