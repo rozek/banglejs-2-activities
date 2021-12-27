@@ -132,6 +132,18 @@ In order to be able to assess the problem properly, here are the same images gen
 
 As one can see, the results of the built-in dithering come pretty close to what you may expect using off-line dithering. Or, in other words, don't try to use color wedges...
 
+### Color Stripes ###
+
+Now that we know that we should avoid intensity gradients on a Bangle.js 2, the question arises whether we may use color gradients, at least.
+
+
+
+Again, here are the similar images generated using 24-bit graphics in the process of being converted to 3-bit colors:
+
+![](Colors/ColorStripe-Conversion.png)
+![](Colors/ColorDisc-Conversion.png)
+
+
 ## License ##
 
 [MIT License](LICENSE.md)
