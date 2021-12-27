@@ -9,7 +9,7 @@
 
     for (let i = 0; i < Steps; i++) {
       let Color = E.HSBtoRGB(i/Steps,1,1, true);
-      g.setColor(Color[0],Color[1],Color[2]);
+      g.setColor(Color[0]/255,Color[1]/255,Color[2]/255);
       g.fillRect(i*StepWidth,y, (i+1)*StepWidth,y+StripeHeight-2);
     }
   }
