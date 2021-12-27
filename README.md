@@ -14,6 +14,8 @@ Most "activities" come with some source code. Unless otherwise noted, this code 
 
 ## Overview ##
 
+A click on one of the links shown below leads directly to the corresponding topic:
+
 ### Color Handling ###
 
 <table>
