@@ -198,6 +198,14 @@ This [source code](Colors/ColorDisc-toWhite-24+4-Steps.js) may also be run both 
 <br clear="left">
 &nbsp;<br>
 
+More than 4 gradations of brightness or saturation don't seem useful as the result of reducing brightness or saturation in smaller steps becomes increasingly unpredictable after dithering:
+
+<img align="left" src="Colors/ColorDisc-toBlack-24+8-Steps.png">
+<img align="left" src="Colors/ColorDisc-toWhite-24+8-Steps.png">
+
+<br clear="left">
+&nbsp;<br>
+
 As usual, here is a similar image generated using 24-bit graphics while being converted to 3-bit colors:
 
 ![](Colors/ColorDisc-Conversion.png)
