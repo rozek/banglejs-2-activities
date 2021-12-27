@@ -56,11 +56,17 @@ Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the 
 
 <img align="left" src="Colors/HalfColors.png">
 
-You may try yourself with this little [code snippet](Colors/HalfColors.js).
-
-Forum user "HughB" suggested to make the color patches touchable and display the hexadecimal color code of any touched patch - et voilá, [here it comes](Colors/HalfColors-touchable.js)!
+The underlying [source code](Colors/HalfColors.js) may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js).
 
 <br clear="left">
+
+<img align="right" src="Colors/HalfColors-touchable.png">
+
+Forum user "HughB" suggested to make the color patches touchable and display the hexadecimal color code of any touched patch:
+
+The underlying [source code](Colors/HalfColors-touchable.js) may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors-touchable.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors-touchable.js).
+
+<br clear="right">
 
 ### "Quarter Colors" ###
 
