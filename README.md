@@ -14,6 +14,8 @@ Most "activities" come with some source code. Unless otherwise noted, this code 
 
 ## Overview ##
 
+A click on one of the links shown below leads directly to the corresponding topic:
+
 ### Color Handling ###
 
 <table>
@@ -27,6 +29,7 @@ Most "activities" come with some source code. Unless otherwise noted, this code 
    <td align="center"><img src="Colors/ColorWheel.png"><br><a href="#color-wheel">Color Wheel</a></td>
    <td align="center"><img src="Colors/ColorWedge-to-black.png"><br><a href="#color-wedges">Color Wedges</a></td>
    <td align="center"><img src="Colors/ColorStripes.png"><br><a href="#color-stripes">Color Stripes</a></td>
+   <td align="center"><img src="Colors/ColorDisc-24-4Steps.png"><br><a href="#color-discs">Color Discs</a></td>
  </tr>
 </table>
 
@@ -169,9 +172,26 @@ As usual, you may run the [source code](Colors/ColorWheel-24Steps.js) both in th
 <br clear="left">
 &nbsp;<br>
 
-Again, here are similar images generated using 24-bit graphics in the process of being converted to 3-bit colors:
+As before, here is again a similar image generated using 24-bit graphics while being converted to 3-bit colors:
 
 ![](Colors/ColorStripe-Conversion.png)
+
+### Color Discs ###
+
+The promising outcome of the previous experiment immediately arouses interest in further studies:
+
+<img align="left" src="Colors/ColorDisc-24-4Steps.png">
+
+This example shows a color disc with 24 different hue and 4 different brightness values.
+
+You may run the [source code](Colors/ColorDisc-24-4Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-24-4Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-24-4Steps.js).
+
+<br clear="left">
+&nbsp;<br>
+
+
+As usual, here is a similar image generated using 24-bit graphics while being converted to 3-bit colors:
+
 ![](Colors/ColorDisc-Conversion.png)
 
 
