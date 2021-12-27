@@ -29,7 +29,7 @@ A click on one of the links shown below leads directly to the corresponding topi
    <td align="center"><img src="Colors/ColorWheel.png"><br><a href="#color-wheel">Color Wheel</a></td>
    <td align="center"><img src="Colors/ColorWedge-to-black.png"><br><a href="#color-wedges">Color Wedges</a></td>
    <td align="center"><img src="Colors/ColorStripes.png"><br><a href="#color-stripes">Color Stripes</a></td>
-   <td align="center"><img src="Colors/ColorDisc-24-4Steps.png"><br><a href="#color-discs">Color Discs</a></td>
+   <td align="center"><img src="Colors/ColorDisc-toBlack-24+4-Steps.png"><br><a href="#color-discs">Color Discs</a></td>
  </tr>
 </table>
 
@@ -180,14 +180,20 @@ As before, here is again a similar image generated using 24-bit graphics while b
 
 The promising outcome of the previous experiment immediately arouses interest in further studies:
 
-<img align="left" src="Colors/ColorDisc-24-4Steps.png">
+<img align="left" src="Colors/ColorDisc-toBlack-24+4-Steps.png">
 
-This example shows a color disc with 24 different hue and 4 different brightness values.
+This example shows a color disc with 24 different hue and 5 different brightness values.
 
-You may run the [source code](Colors/ColorDisc-24-4Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-24-4Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-24-4Steps.js).
+You may run the [source code](Colors/ColorDisc-toBlack-24+4-Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toBlack-24+4-Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toBlack-24+4-Steps.js).
 
 <br clear="left">
 &nbsp;<br>
+
+<img align="left" src="Colors/ColorDisc-toWhite-24+4-Steps.png">
+
+And here is the same with 24 different hue and 5 different saturation values.
+
+This [source code](Colors/ColorDisc-toWhite-24+4-Steps.js) may also be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toWhite-24+4-Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toWhite-24+4-Steps.js).
 
 
 As usual, here is a similar image generated using 24-bit graphics while being converted to 3-bit colors:
