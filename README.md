@@ -151,12 +151,19 @@ You may run the [source code](Colors/ColorWheel-6Steps.js) both in the [emulator
 &nbsp;<br>
 
 <img align="left" src="Colors/ColorStripes.png">
-
 The next example shows stripes of colors with hues ranging from 0 to 1 at different resolutions.
 
 The underlying [source code](Colors/ColorStripes.js) may also be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorStripes.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorStripes.js).
 
 The result looks surprisingly good - although you should presumably limit yourself to 24 different hue values at most (the second bottom line does so whereas the bottommost one shows 176 different hue values)
+
+<br clear="left">
+&nbsp;<br>
+
+<img align="left" src="Colors/ColorWheel-24Steps.png">
+The last example shows a color wheel with said 24 different hue values.
+
+As usual, you may run the [source code](Colors/ColorWheel-24Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-24Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-24Steps.js).
 
 <br clear="left">
 &nbsp;<br>
