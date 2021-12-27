@@ -26,6 +26,7 @@ Most "activities" come with some source code. Unless otherwise noted, this code 
  <tr>
    <td align="center"><img src="Colors/ColorWheel.png"><br><a href="#color-wheel">Color Wheel</a></td>
    <td align="center"><img src="Colors/ColorWedge-to-black.png"><br><a href="#color-wedges">Color Wedges</a></td>
+   <td align="center"><img src="Colors/ColorStripes.png"><br><a href="#color-stripes">Color Stripes</a></td>
  </tr>
 </table>
 
