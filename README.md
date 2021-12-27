@@ -129,7 +129,7 @@ You may try yourself:<br>
 However, the results don't look promising at all.
 <br clear="left">
 
-In order to be able to assess the problem properly, here are the same images generated with 24-bit graphics while being converted to 3-bit color:
+In order to be able to assess the problem properly, here are the same images generated with 24-bit graphics during a conversion to 3-bit color:
 
 ![](Colors/ColorWedge-toBlack_Conversion.png)
 ![](Colors/ColorWedge-toWhite_Conversion.png)
@@ -172,7 +172,7 @@ As usual, you may run the [source code](Colors/ColorWheel-24Steps.js) both in th
 <br clear="left">
 &nbsp;<br>
 
-As before, here is again a similar image generated using 24-bit graphics while being converted to 3-bit colors:
+As before, here is again a similar image generated using 24-bit graphics during a conversion to 3-bit colors:
 
 ![](Colors/ColorStripe-Conversion.png)
 
@@ -206,7 +206,7 @@ More than 4 gradations of brightness or saturation don't seem useful as the resu
 <br clear="left">
 &nbsp;<br>
 
-As usual, here is a similar image generated using 24-bit graphics while being converted to 3-bit colors:
+As usual, here is a similar image generated using 24-bit graphics during a conversion to 3-bit colors:
 
 ![](Colors/ColorDisc-Conversion.png)
 
