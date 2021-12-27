@@ -39,7 +39,7 @@ A click on one of the links shown below leads directly to the corresponding topi
 
 <img align="left" src="Colors/BasicColors.png">
 
-Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 different colors without dithering.
+Because of a restriction to 3-bit colors, a Bangle.js 2 may only display 8 different colors without dithering.
 
 The underlying [source code](Colors/BasicColors.js) for this example may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/BasicColors.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/BasicColors.js).
 
