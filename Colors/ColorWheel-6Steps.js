@@ -29,6 +29,6 @@
         Polygon.push(CenterY - innerRadius * cos(Phi));
       }
     let Color = E.HSBtoRGB(i/6,1,1, true);
-    g.setColor(Color[0],Color[1],Color[2]);
+    g.setColor(Color[0]/255,Color[1]/255,Color[2]/255);
     g.fillPoly(Polygon);
   }
