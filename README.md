@@ -112,9 +112,17 @@ This version also exists as a small Bangle.js 2 [application](https://rozek.gith
 
 ### Color Wedges ###
 
+In view of a planned application, an attempt was made to draw "intensity wedges" in various colors:
+
 <img align="left" src="Colors/ColorWedge-to-black.png">
 <img align="left" src="Colors/ColorWedge-to-white.png">
 
+You may try yourself:<br>
+&nbsp;<br>
+&nbsp; • [fading to black](Colors/ColorWheel-toBlack.js), in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-toBlack.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-toBlack.js)<br>
+&nbsp; • [fading to white](Colors/ColorWheel-toWhite.js), in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-toWhite.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-toWhite.js)<br>
+&nbsp;<br>
+However, the results don't look promising at all.
 <br clear="left">
 
 
