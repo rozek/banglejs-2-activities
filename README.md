@@ -195,6 +195,8 @@ And here is the same with 24 different hue and 5 different saturation values.
 
 This [source code](Colors/ColorDisc-toWhite-24+4-Steps.js) may also be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toWhite-24+4-Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toWhite-24+4-Steps.js).
 
+<br clear="left">
+&nbsp;<br>
 
 As usual, here is a similar image generated using 24-bit graphics while being converted to 3-bit colors:
 
