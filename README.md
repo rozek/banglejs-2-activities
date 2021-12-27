@@ -32,9 +32,11 @@ Unless otherwise described, any source code should be copied into the clipboard 
 
 ### Basic Colors ###
 
-<img src="Colors/BasicColors.png">
+<img align="left" src="Colors/BasicColors.png">
 
 Because of a restriction to 3-bit colours, a Bangle.js 2 may only display 8 colors without dithering. [This little snippet](Colors/BasicColors.js) lists them.
+
+<br clear="left">
 
 ### Bitmap Preparation ###
 
