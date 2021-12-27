@@ -151,7 +151,7 @@ You may run the [source code](Colors/ColorWheel-6Steps.js) both in the [emulator
 
 <img align="left" src="Colors/ColorStripes.png">
 
-The next example shows stripes of colors with hues randing from 0 to 1 at different resolutions.
+The next example shows stripes of colors with hues ranging from 0 to 1 at different resolutions.
 
 The underlying [source code](Colors/ColorStripes.js) may also be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorStripes.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorStripes.js).
 
