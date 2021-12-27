@@ -68,6 +68,8 @@ Forum user "HughB" suggested to make the color patches touchable and display the
 
 The underlying [source code](Colors/HalfColors-touchable.js) may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors-touchable.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors-touchable.js).
 
+Just tap on any colored patch in order to see the associated color code. Tapping outside any such patch is simply ignored. 
+
 <br clear="left">
 
 ### "Quarter Colors" ###
