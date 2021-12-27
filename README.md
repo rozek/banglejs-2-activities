@@ -159,7 +159,6 @@ The underlying [source code](Colors/ColorStripes.js) may again be run both in th
 The result looks surprisingly good - although you should presumably limit yourself to 24 different hue values at most (the second bottom line does so whereas the bottommost one shows 176 different hue values)
 
 <br clear="left">
-&nbsp;<br>
 
 <img align="left" src="Colors/ColorWheel-24Steps.png">
 
