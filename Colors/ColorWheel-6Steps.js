@@ -9,10 +9,12 @@
 
   let DeltaPhi = twoPi/72;
   let Epsilon  = 0.001;
+
   g.clear();
 
   g.setColor(0,0,0);
   g.fillRect(0,0, ScreenWidth,ScreenHeight);
+
   for (let i = 0; i < 6; i++) {
     let Phi0 = i * twoPi/6, Phi1 = (i+1) * twoPi/6;
 
