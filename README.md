@@ -115,6 +115,8 @@ This version also exists as a small Bangle.js 2 [application](https://rozek.gith
 <img align="left" src="Colors/ColorWedge-to-black.png">
 <img align="left" src="Colors/ColorWedge-to-white.png">
 
+<br clear="left">
+
 
 ## License ##
 
