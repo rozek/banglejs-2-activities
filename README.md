@@ -163,7 +163,7 @@ The result looks surprisingly good - although you should presumably limit yourse
 
 <img align="left" src="Colors/ColorWheel-24Steps.png">
 
-The last example shows a color wheel with said 24 different hue values.
+This example shows a color wheel with said 24 different hue values.
 
 As usual, you may run the [source code](Colors/ColorWheel-24Steps.js) both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-24Steps.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorWheel-24Steps.js).
 
