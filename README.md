@@ -58,6 +58,8 @@ Forum user "Numerist" suggested to use RGB channel value 0.5 in addition to the 
 
 The underlying [source code](Colors/HalfColors.js) may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/HalfColors.js).
 
+Please note that increasing the color resolution (from 8 to 27) comes at a price, namely the decrease of spatial resolution. The actual resolution loss depends very much on what you draw on the screen, but it may well halve your effectively usable screen size to 88x88 pixels.
+
 <br clear="left">
 
 Forum user "HughB" suggested to make the color patches touchable and display the hexadecimal color code of any touched patch:
