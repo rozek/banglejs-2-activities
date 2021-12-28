@@ -12,6 +12,8 @@
   let SecondHandLength = outerRadius * 0.9;
   let SecondHandOffset = 6;
 
+  let sin = Math.sin, cos = Math.cos;
+
   let twoPi  = 2*Math.PI;
   let Pi     = Math.PI;
   let halfPi = Math.PI/2;
@@ -54,7 +56,7 @@
   let transformedPolygon = new Array(HourHandPolygon.length);
 
   function transformPolygon (originalPolygon, OriginX,OriginY, Phi) {
-    let sPhi = Math.sin(Phi), cPhi = Math.cos(Phi), x,y;
+    let sPhi = sin(Phi), cPhi = cos(Phi), x,y;
 
     for (let i = 0, l = originalPolygon.length; i < l; i+=2) {
       x = originalPolygon[i];
@@ -86,7 +88,7 @@
     transformPolygon(MinuteHandPolygon, CenterX,CenterY, MinutesAngle);
     g.fillPoly(transformedPolygon);
 
-    let sPhi = Math.sin(SecondsAngle), cPhi = Math.cos(SecondsAngle);
+    let sPhi = sin(SecondsAngle), cPhi = cos(SecondsAngle);
 
     g.setColor('#FF0000');
     g.drawLine(
