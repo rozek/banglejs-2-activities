@@ -281,6 +281,7 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 &nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js)
 
 <br clear="left">
+&nbsp;<br>
 
 Every analog clock needs some hands - here are code snippets for clocks with hour and minute hands and with hour, minute and second hands
 
