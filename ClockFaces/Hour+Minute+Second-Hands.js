@@ -16,6 +16,8 @@
   let Pi     = Math.PI;
   let halfPi = Math.PI/2;
 
+  let sin = Math.sin, cos = Math.cos;
+
   let HourHandPolygon = [
     -halfHourHandWidth,halfHourHandWidth,
     -halfHourHandWidth,halfHourHandWidth-HourHandLength,
@@ -35,7 +37,7 @@
   let transformedPolygon = new Array(HourHandPolygon.length);
 
   function transformPolygon (originalPolygon, OriginX,OriginY, Phi) {
-    let sPhi = Math.sin(Phi), cPhi = Math.cos(Phi), x,y;
+    let sPhi = sin(Phi), cPhi = cos(Phi), x,y;
 
     for (let i = 0, l = originalPolygon.length; i < l; i+=2) {
       x = originalPolygon[i];
