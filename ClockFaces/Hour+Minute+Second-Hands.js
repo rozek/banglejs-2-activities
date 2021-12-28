@@ -59,6 +59,8 @@
     let MinutesAngle = (Minutes/60)            * twoPi - Pi;
     let SecondsAngle = (Seconds/60)            * twoPi - Pi;
 
+    g.setColor('#FFFFFF');
+
     transformPolygon(HourHandPolygon, CenterX,CenterY, HoursAngle);
     g.fillPoly(transformedPolygon);
 
@@ -85,7 +87,6 @@
     g.setColor(0,0,0);
     g.fillRect(0,0, ScreenWidth,ScreenHeight);
 
-    g.setColor('#FFFFFF');
     drawClockHands();
 
     let Pause = 1000 - (Date.now() % 1000);
