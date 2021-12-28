@@ -246,6 +246,8 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 
 <br clear="left">
 
+A clock made with this face is stylish because of its minimalism and perfectly readable even without backlight. If you don't need to know the seconds, you may even remove the second hand (and reduce power consumption a bit)
+
 ### Hour Numbers ###
 
 <img align="left" src="ClockFaces/HourNumbers.png">
