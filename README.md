@@ -296,7 +296,7 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 
 ### Hour, Minute and Second Hands ###
 
-<img align="left" src="ClockFaces/Hour+Minute+Second-Hands-dark.png">
+<img align="left" src="ClockFaces/Hour+Minute+Second-Hands.png">
 
 &nbsp; • [source code](ClockFaces/Hour+Minute+Second-Hands.js) for hands only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js) or<br>
