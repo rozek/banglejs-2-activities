@@ -44,7 +44,7 @@ A click on one of the links shown below leads directly to the corresponding topi
  </tr>
  <tr valign="top">
    <td align="center"><img src="ClockFaces/Hour+Minute-Hands.png"><br><a href="#hour-and-minute-hands">Hour and Minute Hands</a></td>
-   <td align="center"><img src="ClockFaces/Hour+Minute+Second-Hands.png"><br><a href="#hour-minute-and-second-hands">Hour, Minute and Second Hands</a></td>
+   <td align="center"><img src="ClockFaces/Hour+Minute+Second-Hands.png"><br><a href="#hour-minute-and-second-hands">Hour, Minute and<br>Second Hands</a></td>
  </tr>
 </table>
 
