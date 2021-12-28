@@ -319,6 +319,8 @@ If you like it minimalistic, you may even make a clock just from these hands onl
 
 <br clear="left">
 
+Since clocks are shown all the time, they should probably take care of any installed "widgets" and display them properly alogn with the clock itself. If widgets occupy the corners of a Bangle screen only, not many code changes will be necessary - otherwise, the actual clock will have to be scaled down in order to cover that part of the screen only which is guaranteed to be free of widgets.
+
 ## License ##
 
 [MIT License](LICENSE.md)
