@@ -255,10 +255,14 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 ### Hour Numbers ###
 
 <img align="left" src="ClockFaces/HourNumbers.png">
+<img align="left" src="ClockFaces/HourNumbers-with-Hands-dark.png">
 
 &nbsp; • [source code](ClockFaces/HourNumbers.js) for clock face only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js)
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js)<br>&nbsp;<br>
+&nbsp; • [source code](ClockFaces/HourNumbers-with-Hands-dark.js) for clock face and hands<br>
+&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers-with-Hands-dark.js) or<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers-with-Hands-dark.js)
 
 <br clear="left">
 
