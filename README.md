@@ -320,7 +320,16 @@ If you like it minimalistic, you may even make a clock just from these hands onl
 <br clear="left">
 &nbsp;<br>
 
+### Widget Handling ###
+
 Since clocks are shown all the time, they should probably take care of any installed "widgets" and display them properly alogn with the clock itself. If widgets occupy the corners of a Bangle screen only, not many code changes will be necessary - otherwise, the actual clock will have to be scaled down in order to cover that part of the screen only which is guaranteed to be free of widgets.
+
+<img align="left" src="ClockFaces/Dots-with-WidgetHandling.png">
+
+&nbsp; • [source code](ClockFaces/WidgetHandling.js) for widget handling only<br>
+&nbsp; • [source code](ClockFaces/Dots-with-WidgetHandling.js) for the demonstrator<br>
+&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Dots-with-WidgetHandling.js) or<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Dots-with-WidgetHandling.js)
 
 ## License ##
 
