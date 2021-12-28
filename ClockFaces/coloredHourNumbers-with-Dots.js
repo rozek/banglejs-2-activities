@@ -12,9 +12,6 @@
   g.setColor(0,0,0);
   g.fillRect(0,0, ScreenWidth,ScreenHeight);
 
-  g.setFont('Vector', 22);
-  g.setFontAlign(0,0);
-
   for (let i = 0; i < 60; i++) {
     let Phi = i * twoPi/60;
 
@@ -26,6 +23,9 @@
 
     g.fillCircle(x,y, 1);
   }
+
+  g.setFont('Vector', 22);
+  g.setFontAlign(0,0);
 
   for (let i = 0; i < 12; i++) {
     let Phi = i * twoPi/12;
