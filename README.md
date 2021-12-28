@@ -205,7 +205,7 @@ More than 4 gradations of brightness or saturation don't seem useful as the resu
 
 &nbsp; • [source code](Colors/ColorDisc-toBlack-24+8-Steps.js) for brightness example<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toBlack-24+8-Steps.js)<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toBlack-24+8-Steps.js)<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toBlack-24+8-Steps.js)<br>&nbsp;<br>
 &nbsp; • [source code](Colors/ColorDisc-toWhite-24+8-Steps.js) for saturation example<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toWhite-24+8-Steps.js)<br>
 &nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Colors/ColorDisc-toWhite-24+8-Steps.js)
