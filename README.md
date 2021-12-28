@@ -234,19 +234,19 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 
 ### QuarterHour Numbers ###
 
-<img align="left" src="ColorFaces/QuarterHourNumbers.png">
+<img align="left" src="ClockFaces/QuarterHourNumbers.png">
 
 ### Hour Numbers ###
 
-<img align="left" src="ColorFaces/HourNumbers.png">
+<img align="left" src="ClockFaces/HourNumbers.png">
 
 ### Colored Hour Numbers ###
 
-<img align="left" src="ColorFaces/coloredHourNumbers.png">
+<img align="left" src="ClockFaces/coloredHourNumbers.png">
 
 ### Colored Hour Numbers with Dots ###
 
-<img align="left" src="ColorFaces/coloredHourNumbers-with-Dots.png">
+<img align="left" src="ClockFaces/coloredHourNumbers-with-Dots.png">
 
 ## License ##
 
