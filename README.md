@@ -236,8 +236,8 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 
 <img align="left" src="ClockFaces/QuarterHourNumbers.png">
 
-&nbsp; • [source code](ClockFaces/QuarterHourNumbers.js) for brightness example<br>
-&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js)<br>
+&nbsp; • [source code](ClockFaces/QuarterHourNumbers.js)<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js)
 
 <br clear="left">
@@ -246,17 +246,29 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 
 <img align="left" src="ClockFaces/HourNumbers.png">
 
+&nbsp; • [source code](ClockFaces/HourNumbers.js)<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js)
+
 <br clear="left">
 
 ### Colored Hour Numbers ###
 
 <img align="left" src="ClockFaces/coloredHourNumbers.png">
 
+&nbsp; • [source code](ClockFaces/coloredHourNumbers.js)<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js)
+
 <br clear="left">
 
 ### Colored Hour Numbers with Dots ###
 
 <img align="left" src="ClockFaces/coloredHourNumbers-with-Dots.png">
+
+&nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Dots.js)<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js)
 
 <br clear="left">
 
