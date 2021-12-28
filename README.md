@@ -40,7 +40,7 @@ A click on one of the links shown below leads directly to the corresponding topi
    <td align="center"><img src="ClockFaces/QuarterHourNumbers.png"><br><a href="#quarterhour-numbers">Quarter Hour Numbers</a></td>
    <td align="center"><img src="ClockFaces/HourNumbers.png"><br><a href="#hour-numbers">Hour Numbers</a></td>
    <td align="center"><img src="ClockFaces/coloredHourNumbers.png"><br><a href="#colored-hour-numbers">colored Hour Numbers</a></td>
-   <td align="center"><img src="ClockFaces/coloredHourNumbers-with-Dots.png"><br><a href="#colored-hour-numbers-with-dots">colored Hour Numbers with Dots</a></td>
+   <td align="center"><img src="ClockFaces/coloredHourNumbers-with-Dots.png"><br><a href="#colored-hour-numbers-with-dots">colored Hour Numbers<br>with Dots</a></td>
  </tr>
 </table>
 
