@@ -302,6 +302,8 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js) or<br>
 &nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js)
 
+If you like it minimalistic, you may even make a clock just from these hands only.
+
 <br clear="left">
 
 ## License ##
