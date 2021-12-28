@@ -228,6 +228,25 @@ As usual, here is a similar image generated using 24-bit graphics during a conve
 
 ![](Colors/ColorDisc-Conversion.png)
 
+## Analog Clock Faces ##
+
+At the time of this writing, there are many clock faces for the Bangle.js 2 - even analog ones - but very few (one?) that also display numbers. The following examples have been written to fill this gap.
+
+### QuarterHour Numbers ###
+
+<img align="left" src="ColorFaces/QuarterHourNumbers.png">
+
+### Hour Numbers ###
+
+<img align="left" src="ColorFaces/HourNumbers.png">
+
+### Colored Hour Numbers ###
+
+<img align="left" src="ColorFaces/coloredHourNumbers.png">
+
+### Colored Hour Numbers with Dots ###
+
+<img align="left" src="ColorFaces/coloredHourNumbers-with-Dots.png">
 
 ## License ##
 
