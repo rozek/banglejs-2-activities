@@ -235,14 +235,14 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 ### QuarterHour Numbers ###
 
 <img align="left" src="ClockFaces/QuarterHourNumbers.png">
-<img align="left" src="ClockFaces/QuarterHourNumbers-with-Hands.png">
+<img align="left" src="ClockFaces/QuarterHourNumbers-with-Hands-dark.png">
 
 &nbsp; • [source code](ClockFaces/QuarterHourNumbers.js) for clock face only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js) or<br>
 &nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js)<br>&nbsp;<br>
-&nbsp; • [source code](ClockFaces/QuarterHourNumbers-with-Hands.js) for clock face and hands<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers-with-Hands.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers-with-Hands.js)
+&nbsp; • [source code](ClockFaces/QuarterHourNumbers-with-Hands-dark.js) for clock face and hands<br>
+&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers-with-Hands-dark.js) or<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers-with-Hands-dark.js)
 
 <br clear="left">
 
@@ -290,7 +290,7 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 
 ### Hour, Minute and Second Hands ###
 
-<img align="left" src="ClockFaces/Hour+Minute+Second-Hands.png">
+<img align="left" src="ClockFaces/Hour+Minute+Second-Hands-dark.png">
 
 &nbsp; • [source code](ClockFaces/Hour+Minute+Second-Hands.js) for hands only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js) or<br>
