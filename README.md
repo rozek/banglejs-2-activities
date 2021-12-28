@@ -269,6 +269,7 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 ### Colored Hour Numbers ###
 
 <img align="left" src="ClockFaces/coloredHourNumbers.png">
+<img align="left" src="ClockFaces/coloredHourNumbers-with-Hands-dark.png">
 
 &nbsp; • [source code](ClockFaces/coloredHourNumbers.js) for clock face only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js) or<br>
@@ -279,6 +280,7 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 ### Colored Hour Numbers with Dots ###
 
 <img align="left" src="ClockFaces/coloredHourNumbers-with-Dots.png">
+<img align="left" src="ClockFaces/coloredHourNumbers-with-Dots-and-Hands-dark.png">
 
 &nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Dots.js) for clock face only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js) or<br>
