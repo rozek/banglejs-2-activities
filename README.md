@@ -287,7 +287,10 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 
 &nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Dots.js) for clock face only<br>
 &nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js)
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js)<br>&nbsp;<br>
+&nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Dots-and-Hands-dark.js) for clock face and hands<br>
+&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands-dark.js) or<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands-dark.js)
 
 <br clear="left">
 &nbsp;<br>
