@@ -73,10 +73,10 @@
 
     g.setColor('#FF0000');
     g.drawLine(
-      CenterX - SecondHandOffset*sPhi,
-      CenterY + SecondHandOffset*cPhi,
-      CenterX + SecondHandLength*sPhi,
-      CenterY - SecondHandLength*cPhi
+      CenterX + SecondHandOffset*sPhi,
+      CenterY - SecondHandOffset*cPhi,
+      CenterX - SecondHandLength*sPhi,
+      CenterY + SecondHandLength*cPhi
     );
   }
 
