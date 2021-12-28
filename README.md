@@ -318,7 +318,6 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 If you like it minimalistic, you may even make a clock just from these hands only.
 
 <br clear="left">
-&nbsp;<br>
 
 ### Widget Handling ###
 
