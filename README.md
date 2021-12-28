@@ -19,13 +19,13 @@ A click on one of the links shown below leads directly to the corresponding topi
 ### Color Handling ###
 
 <table>
- <tr>
+ <tr valign="top">
    <td align="center"><img src="Colors/BasicColors.png"><br><a href="#basic-colors">Basic Colors</a></td>
    <td align="center"><img src="Colors/Mandelbrot_176x176.png"><br><a href="#bitmap-preparation">Bitmap Preparation</a></td>
    <td align="center"><img src="Colors/HalfColors.png"><br><a href="#half-colors">"Half Colors"</a></td>
    <td align="center"><img src="Colors/QuarterColors.png"><br><a href="#quarter-colors">"Quarter Colors"</a></td>
  </tr>
- <tr>
+ <tr valign="top">
    <td align="center"><img src="Colors/ColorWheel.png"><br><a href="#color-wheel">Color Wheel</a></td>
    <td align="center"><img src="Colors/ColorWedge-to-black.png"><br><a href="#color-wedges">Color Wedges</a></td>
    <td align="center"><img src="Colors/ColorStripes.png"><br><a href="#color-stripes">Color Stripes</a></td>
@@ -36,7 +36,7 @@ A click on one of the links shown below leads directly to the corresponding topi
 ### Analog Clock Faces ###
 
 <table>
- <tr>
+ <tr valign="top">
    <td align="center"><img src="ClockFaces/QuarterHourNumbers.png"><br><a href="#quarterhour-numbers">Quarter Hour Numbers</a></td>
    <td align="center"><img src="ClockFaces/HourNumbers.png"><br><a href="#hour-numbers">Hour Numbers</a></td>
    <td align="center"><img src="ClockFaces/coloredHourNumbers.png"><br><a href="#colored-hour-numbers">colored Hour Numbers</a></td>
