@@ -272,6 +272,28 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 
 <br clear="left">
 
+Every analog clock needs some hands - here are code snippets for clocks with hour and minute hands and with hour, minute and second hands
+
+### Hour and Minute Hands ###
+
+<img align="left" src="ClockFaces/Hour+Minute-Hands.png">
+
+&nbsp; • [source code](ClockFaces/Hour+Minute-Hands.js) for hands only<br>
+&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute-Hands.js) or<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute-Hands.js)
+
+<br clear="left">
+
+### Hour, Minute and Second Hands ###
+
+<img align="left" src="ClockFaces/Hour+Minute+Second-Hands.png">
+
+&nbsp; • [source code](ClockFaces/Hour+Minute+Second-Hands.js) for hands only<br>
+&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js) or<br>
+&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js)
+
+<br clear="left">
+
 ## License ##
 
 [MIT License](LICENSE.md)
