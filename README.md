@@ -42,6 +42,10 @@ A click on one of the links shown below leads directly to the corresponding topi
    <td align="center"><img src="ClockFaces/coloredHourNumbers.png"><br><a href="#colored-hour-numbers">colored Hour Numbers</a></td>
    <td align="center"><img src="ClockFaces/coloredHourNumbers-with-Dots.png"><br><a href="#colored-hour-numbers-with-dots">colored Hour Numbers<br>with Dots</a></td>
  </tr>
+ <tr valign="top">
+   <td align="center"><img src="ClockFaces/Hour+Minute-Hands.png.png"><br><a href="#hour-and-minute-hands">Hour and Minute Hands</a></td>
+   <td align="center"><img src="ClockFaces/Hour+Minute+Second-Hands.png.png"><br><a href="#hour-minute-and-second-hands">Hour, Minute and Second Hands</a></td>
+ </tr>
 </table>
 
 ## Color Handling ##
