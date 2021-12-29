@@ -41,6 +41,14 @@ A click on one of the links shown below leads directly to the corresponding topi
  </tr>
 </table>
 
+### Layouting ###
+
+<table>
+ <tr valign="top">
+   <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#label">Label</a></td>
+ </tr>
+</table>
+
 ### Analog Clock Faces ###
 
 <table>
@@ -251,6 +259,23 @@ In order to unify the visual appearance of multiple Bangle.js apps, users may co
 This example displays the currently active theme settings.
 
 The underlying [source code](Theming/currentTheme.js) for this example may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Theming/currentTheme.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Theming/currentTheme.js).
+
+<br clear="left">
+
+## Layouting ##
+
+The built-in layout library significantly simplifies the implementation of non-trivial user interfaces. It has its limitations, but these may easily be overcome with "custom renderers" and functions which generate the appropriate layout descriptions.
+
+### Label ###
+
+The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which provides proper text alignment. The screenshot shown below illustrates this feature:
+
+<img align="left" src="Layouting/LabelDemo.png">
+
+• [source code](Layouting/Label.js) for the label component itself<br>&nbsp;<br>
+• [source code](Layouting/LabelDemo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js)
 
 <br clear="left">
 
