@@ -1,40 +1,79 @@
-  let ScreenWidth  = g.getWidth(),  CenterX = ScreenWidth/2;
-  let ScreenHeight = g.getHeight();
+  let ScreenWidth = g.getWidth();
+  let ColumnWidth = ScreenWidth/4;                          // we plan 4 columns
 
-  g.reset();                                // automatically loads current theme
-  g.clearRect(0,0, ScreenWidth,ScreenHeight);
+  g.clear(true);                                     // also loads current theme
 
-  g.setFont12x20();
-
-  g.setFontAlign(0,-1);
-  g.drawString('current Theme', CenterX,0);
-
-  g.setFontAlign(-1,-1);
+  g.stringHeight = function stringHeight (Text) {
+    return g.stringMetrics(Text).height;
+  };
 
   let Theme = g.theme;
+  g.setTheme({ fg:'#000000', bg:'#FFFFFF' });
 
-  g.setColor(Theme.fg);
-    g.drawString('fg',  0,40);
-    g.drawString('bg',  CenterX,40);
-    g.drawString('fg2', 0,80);
-    g.drawString('bg2', CenterX,80);
-    g.drawString('fgH', 0,120);
-    g.drawString('bgH', CenterX,120);
-    g.drawString('dark', 0,160);
+/**** Label ****/
 
-  g.setColor(Theme.fg); g.fillRect(40,40, 70,60);
+  function Label (Text) {
+    g.setFont12x20();
+    return {
+      type:'custom', render:renderLabel,
+      label:Text, width:ColumnWidth, height:g.stringHeight(Text)+2*4, pad:4
+    };
+  }
 
-  g.setColor(Theme.fg); g.drawRect(CenterX+39,39, CenterX+71,61);
-  g.setColor(Theme.bg); g.fillRect(CenterX+40,40, CenterX+70,60);
+/**** renderLabel - left-aligned ****/
 
-  g.setColor(Theme.fg2); g.fillRect(40,80, 70,100);
+  function renderLabel (Details) {
+    let x = Details.x, y = Details.y, Padding = Details.pad;
 
-  g.setColor(Theme.fg);  g.drawRect(CenterX+39,79, CenterX+71,101);
-  g.setColor(Theme.bg2); g.fillRect(CenterX+40,80, CenterX+70,100);
+    g.setFont12x20();
+    g.setFontAlign(-1,-1);
+    g.drawString(Details.label, x+Padding,y+Padding);
+  }
 
-  g.setColor(Theme.fgH); g.fillRect(40,120, 70,140);
+/**** Patch ****/
 
-  g.setColor(Theme.fg);  g.drawRect(CenterX+39,119, CenterX+71,141);
-  g.setColor(Theme.bgH); g.fillRect(CenterX+40,120, CenterX+70,140);
+  function Patch (Color) {
+    g.setFont12x20();
+    return {
+      type:'custom', render:renderPatch,
+      color:Color, width:ColumnWidth, height:g.stringHeight('*')+2*4, pad:4
+    };
+  }
 
-  g.setColor(Theme.fg); g.drawString(Theme.dark ? 'yes' : 'no', 50,160);
+/**** renderPatch ****/
+
+  function renderPatch (Details) {
+    let x = Details.x, y = Details.y, Width = Details.w, Height = Details.h;
+    let Padding = Details.pad;
+
+    g.drawRect(x+Padding,y+Padding, x+Width-Padding,y+Height-Padding);
+
+    g.setColor(Details.color);
+    g.fillRect(x+Padding+1,y+Padding+1, x+Width-Padding-1,y+Height-Padding-1);
+  }
+
+  let Layout = require('Layout');
+  let Display = new Layout({
+    type:'v', c:[
+      { type:'txt', font:'12x20', label:'currentTheme', pad:4 },
+      { type:'h', c:[
+        Label('fg'), Patch(Theme.fg),
+        Label('bg'), Patch(Theme.bg),
+      ] },
+      { type:'h', c:[
+        Label('fg2'), Patch(Theme.fg2),
+        Label('bg2'), Patch(Theme.bg2),
+      ] },
+      { type:'h', c:[
+        Label('fgH'), Patch(Theme.fgH),
+        Label('bgH'), Patch(Theme.bgH),
+      ] },
+      { type:'h', c:[
+        Label('dark'),
+        Label(Theme.dark ? ' yes' : ' no'),
+        { width:ColumnWidth, pad:4 },
+        { width:ColumnWidth, pad:4 },
+      ] },
+    ]
+  });
+  Display.render();
