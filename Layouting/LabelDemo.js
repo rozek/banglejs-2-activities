@@ -16,10 +16,15 @@
       if (Details.font != null) { g.setFont(Details.font); }
       g.setFontAlign(xAlignment,yAlignment);
 
-      g.drawString(Details.label,
-        Details.x + halfWidth  + xAlignment*(halfWidth+Padding),
-        Details.y + halfHeight + yAlignment*(halfHeight+Padding)
-      );
+      let x = Details.x + halfWidth  + xAlignment*(halfWidth+Padding);
+      let y = Details.y + halfHeight + yAlignment*(halfHeight+Padding);
+
+      g.drawString(Details.label, x,y);
+      if (Details.bold) {
+        g.drawString(Details.label, x+1,y);
+        g.drawString(Details.label, x,y+1);
+        g.drawString(Details.label, x+1,y+1);
+      }
     }
 
     let Result = Object.assign({}, Options || {}, {
@@ -44,17 +49,17 @@
     type:'v', c:[
       { type:'h', c:[
         Label('Test',{ valign:-1, halign:-1, font:'12x20', width:ColumnWidth, height:RowHeight }),
-        Label('Test',{ valign:0,  halign:-1, font:'12x20', width:ColumnWidth, height:RowHeight }),
+        Label('Test',{ valign:0,  halign:-1, font:'12x20', width:ColumnWidth, height:RowHeight, bold:true }),
         Label('Test',{ valign:1,  halign:-1, font:'12x20', width:ColumnWidth, height:RowHeight }),
       ] },
       { type:'h', c:[
         Label('Test',{ valign:-1, halign:0, font:'12x20', width:ColumnWidth, height:RowHeight }),
-        Label('Test',{ valign:0,  halign:0, font:'12x20', width:ColumnWidth, height:RowHeight }),
+        Label('Test',{ valign:0,  halign:0, font:'12x20', width:ColumnWidth, height:RowHeight, bold:true }),
         Label('Test',{ valign:1,  halign:0, font:'12x20', width:ColumnWidth, height:RowHeight }),
       ] },
       { type:'h', c:[
         Label('Test',{ valign:-1, halign:1, font:'12x20', width:ColumnWidth, height:RowHeight }),
-        Label('Test',{ valign:0,  halign:1, font:'12x20', width:ColumnWidth, height:RowHeight }),
+        Label('Test',{ valign:0,  halign:1, font:'12x20', width:ColumnWidth, height:RowHeight, bold:true }),
         Label('Test',{ valign:1,  halign:1, font:'12x20', width:ColumnWidth, height:RowHeight }),
       ] },
     ]
