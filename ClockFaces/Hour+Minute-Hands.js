@@ -56,7 +56,7 @@
     let HoursAngle   = (Hours+(Minutes/60))/12 * twoPi - Pi;
     let MinutesAngle = (Minutes/60)            * twoPi - Pi;
 
-    g.setColor('#FFFFFF');
+    g.setColor(g.theme.fg);
 
     transformPolygon(HourHandPolygon, CenterX,CenterY, HoursAngle);
     g.fillPoly(transformedPolygon);
@@ -69,10 +69,7 @@
 
   let Timer;
   function refreshDisplay () {
-    g.clear();
-
-    g.setColor(0,0,0);
-    g.fillRect(0,0, ScreenWidth,ScreenHeight);
+    g.clear(true);                                   // also loads current theme
 
     drawClockHands();
 
