@@ -313,10 +313,9 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 &nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute-Hands.js)
 
 <br clear="left">
+&nbsp;<br>
 
 The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
-
-<br>
 
 ### Hour, Minute and Second Hands ###
 
@@ -329,10 +328,9 @@ The referenced source code considers the currently configured "theme" (and may t
 If you like it minimalistic, you may even make a clock just from these hands only.
 
 <br clear="left">
+&nbsp;<br>
 
 The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
-
-<br>
 
 ### Widget Handling ###
 
