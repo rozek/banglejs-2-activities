@@ -321,9 +321,9 @@ The referenced source code considers the currently configured "theme" (and may t
 
 <img align="left" src="ClockFaces/Hour+Minute+Second-Hands.png">
 
-&nbsp; • [source code](ClockFaces/Hour+Minute+Second-Hands.js) for hands<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js)
+• [source code](ClockFaces/Hour+Minute+Second-Hands.js) for hands<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Hour+Minute+Second-Hands.js)
 
 If you like it minimalistic, you may even make a clock just from these hands only.
 
@@ -338,10 +338,10 @@ Since clocks are shown all the time, they should probably take care of any insta
 
 <img align="left" src="ClockFaces/Dots-with-WidgetHandling.png">
 
-&nbsp; • [source code](ClockFaces/WidgetHandling.js) for widget handling only<br>&nbsp;<br>
-&nbsp; • [source code](ClockFaces/Dots-with-WidgetHandling.js) for the demonstrator<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Dots-with-WidgetHandling.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Dots-with-WidgetHandling.js)
+• [source code](ClockFaces/WidgetHandling.js) for widget handling only<br>&nbsp;<br>
+• [source code](ClockFaces/Dots-with-WidgetHandling.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Dots-with-WidgetHandling.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/Dots-with-WidgetHandling.js)
 
 Please note: widget display on a dark background is not yet optimal - does anybody have an idea how to enhance it?
 
