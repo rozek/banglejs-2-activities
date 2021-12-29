@@ -2,7 +2,7 @@
   let ScreenHeight = g.getHeight(), CenterY = ScreenHeight/2;
 
   let outerRadius = Math.min(CenterX,CenterY) * 0.9;
-  let innerRadius = Math.min(CenterX,CenterY) * 0.8 - 10;
+  let innerRadius = Math.min(CenterX,CenterY) * 0.8 - 14;
 
   let HourHandLength = outerRadius * 0.5;
   let HourHandWidth  = 2*3, halfHourHandWidth = HourHandWidth/2;
@@ -48,7 +48,7 @@
       g.fillCircle(x,y, 1);
     }
 
-    g.setFont('Vector', 22);
+    g.setFont('Vector', 20);
     g.setFontAlign(0,0);
 
     for (let i = 0; i < 12; i++) {
@@ -96,7 +96,7 @@
     let MinutesAngle = (Minutes/60)            * twoPi - Pi;
     let SecondsAngle = (Seconds/60)            * twoPi - Pi;
 
-    g.setColor('#FFFFFF');
+    g.setColor(g.theme.fg);
 
     transformPolygon(HourHandPolygon, CenterX,CenterY, HoursAngle);
     g.fillPoly(transformedPolygon);
@@ -119,10 +119,7 @@
 
   let Timer;
   function refreshDisplay () {
-    g.clear();
-
-    g.setColor(0,0,0);
-    g.fillRect(0,0, ScreenWidth,ScreenHeight);
+    g.clear(true);                                   // also loads current theme
 
     drawClockFace();
     drawClockHands();
