@@ -84,16 +84,16 @@
         p.c++;
       }
 
-      g.reset();
+      g.reset();                                 // also loads the current theme
 
       if (pos.tl.c || pos.tr.c) {
         g.setClipRect(0,h-24,w-1,h-1);
-        g.reset();
+        g.reset();                           // also (re)loads the current theme
       }
 
       if (pos.bl.c || pos.br.c) {
         g.setClipRect(0,h-24,w-1,h-1);
-        g.reset();
+        g.reset();                           // also (re)loads the current theme
       }
 
       try {
@@ -106,17 +106,14 @@
   };
 
   let sin = Math.sin, cos = Math.cos;
+
   let twoPi = 2*Math.PI;
 
-  g.clear();
+  g.clear(true);                                     // also loads current theme
 
-  g.setBgColor(0,0,0);
-  g.clearRect(0,0, ScreenWidth,ScreenHeight);
-
-  g.setBgColor(1,1,1);
   Bangle.drawWidgets();
 
-  g.setColor(1,1,1);
+  g.setColor(g.theme.fg);
   g.setFont('Vector', 22);
   g.setFontAlign(0,0);
 
