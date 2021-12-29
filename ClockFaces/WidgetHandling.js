@@ -79,16 +79,16 @@
         p.c++;
       }
 
-      g.reset();
+      g.reset();                                 // also loads the current theme
 
       if (pos.tl.c || pos.tr.c) {
         g.setClipRect(0,h-24,w-1,h-1);
-        g.reset();
+        g.reset();                           // also (re)loads the current theme
       }
 
       if (pos.bl.c || pos.br.c) {
         g.setClipRect(0,h-24,w-1,h-1);
-        g.reset();
+        g.reset();                           // also (re)loads the current theme
       }
 
       try {
