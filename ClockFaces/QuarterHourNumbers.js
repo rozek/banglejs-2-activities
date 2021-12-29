@@ -3,11 +3,9 @@
 
   let outerRadius = Math.min(CenterX,CenterY) * 0.9;
 
-  g.clear(true);                             // additionally loads current theme
+  g.clear(true);                                     // also loads current theme
 
-  let Theme = g.theme;
-
-  g.setColor(Theme.fg);
+  g.setColor(g.theme.fg);
   g.setFont('Vector', 22);
 
   g.setFontAlign(0,-1);
