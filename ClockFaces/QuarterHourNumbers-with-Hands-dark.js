@@ -103,7 +103,7 @@
 
   let Timer;
   function refreshDisplay () {
-    g.clear(true);                           // additionally loads current theme
+    g.clear(true);                                   // also loads current theme
 
     drawClockFace();
     drawClockHands();
