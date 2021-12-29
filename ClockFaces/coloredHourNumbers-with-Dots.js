@@ -7,10 +7,7 @@
   let sin = Math.sin, cos = Math.cos;
   let twoPi = 2*Math.PI;
 
-  g.clear();
-
-  g.setColor(0,0,0);
-  g.fillRect(0,0, ScreenWidth,ScreenHeight);
+  g.clear(true);                                     // also loads current theme
 
   for (let i = 0; i < 60; i++) {
     let Phi = i * twoPi/60;
