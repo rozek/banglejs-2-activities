@@ -278,6 +278,7 @@ The built-in "txt" component does not take any `halign` and `valign` settings in
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js)
 
 <br clear="left">
+&nbsp;<br>
 
 The "Label" component additionally supports a `bold` option which may be set to `true` if bold text is needed. As a consequence, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This approach is not really efficient, but produces a rather good looking effect...
 
