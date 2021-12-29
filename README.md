@@ -250,9 +250,9 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 
 <br clear="left">
 
-The referenced source code considers the currently configured "theme". The screenshots shown above have been taken for a dark theme - your watch may therefore look different.
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
-A clock made with this face is stylish because of its minimalism and perfectly readable even without backlight. If you don't need to know the seconds, you may even remove the second hand (and reduce power consumption a bit)
+A clock made with this face is perfectly readable even without backlight. If you don't need to know the seconds, you may even remove the second hand (and reduce power consumption a bit)
 
 ### Hour Numbers ###
 
@@ -268,6 +268,8 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 
 <br clear="left">
 
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
+
 ### Colored Hour Numbers ###
 
 <img align="left" src="ClockFaces/coloredHourNumbers.png">
@@ -282,6 +284,8 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 
 <br clear="left">
 
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
+
 ### Colored Hour Numbers with Dots ###
 
 <img align="left" src="ClockFaces/coloredHourNumbers-with-Dots.png">
@@ -295,7 +299,8 @@ A clock made with this face is stylish because of its minimalism and perfectly r
 &nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js)
 
 <br clear="left">
-&nbsp;<br>
+
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
 Every analog clock needs some hands - here are code snippets for clocks with hour and minute hands and with hour, minute and second hands
 
@@ -309,6 +314,8 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 
 <br clear="left">
 
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
+
 ### Hour, Minute and Second Hands ###
 
 <img align="left" src="ClockFaces/Hour+Minute+Second-Hands.png">
@@ -320,6 +327,8 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 If you like it minimalistic, you may even make a clock just from these hands only.
 
 <br clear="left">
+
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
 ### Widget Handling ###
 
