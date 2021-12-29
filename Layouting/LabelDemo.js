@@ -28,7 +28,7 @@
       let TextMetrics;
       if (! Options.width || ! Options.height) {
         if (Options.font != null) { g.setFont(Options.font); }
-        TextMetrics = g.stringMetrics(Options.label);
+        TextMetrics = g.stringMetrics(Result.label);
       }
 
       Result.width  = Options.width  || TextMetrics.width  + 2*(Options.pad || 0);
