@@ -35,7 +35,7 @@
 /**** drawClockFace ****/
 
   function drawClockFace () {
-    g.setColor(1,1,1);
+    g.setColor(g.theme.fg);
     g.setFont('Vector', 22);
 
     g.setFontAlign(0,-1);
@@ -80,7 +80,7 @@
     let MinutesAngle = (Minutes/60)            * twoPi - Pi;
     let SecondsAngle = (Seconds/60)            * twoPi - Pi;
 
-    g.setColor('#FFFFFF');
+    g.setColor(g.theme.fg);
 
     transformPolygon(HourHandPolygon, CenterX,CenterY, HoursAngle);
     g.fillPoly(transformedPolygon);
@@ -103,10 +103,7 @@
 
   let Timer;
   function refreshDisplay () {
-    g.clear();
-
-    g.setColor(0,0,0);
-    g.fillRect(0,0, ScreenWidth,ScreenHeight);
+    g.clear(true);                           // additionally loads current theme
 
     drawClockFace();
     drawClockHands();
