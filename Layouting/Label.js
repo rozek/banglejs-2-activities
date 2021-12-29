@@ -11,10 +11,15 @@
       if (Details.font != null) { g.setFont(Details.font); }
       g.setFontAlign(xAlignment,yAlignment);
 
-      g.drawString(Details.label,
-        Details.x + halfWidth  + xAlignment*(halfWidth+Padding),
-        Details.y + halfHeight + yAlignment*(halfHeight+Padding)
-      );
+      let x = Details.x + halfWidth  + xAlignment*(halfWidth+Padding);
+      let y = Details.y + halfHeight + yAlignment*(halfHeight+Padding);
+
+      g.drawString(Details.label, x,y);
+      if (Details.bold) {
+        g.drawString(Details.label, x+1,y);
+        g.drawString(Details.label, x,y+1);
+        g.drawString(Details.label, x+1,y+1);
+      }
     }
 
     let Result = Object.assign({}, Options || {}, {
