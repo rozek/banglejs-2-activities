@@ -20,17 +20,13 @@
     let Result = Object.assign({}, Options || {}, {
       type:'custom', render:renderLabel, label:Text || ''
     });
+      let TextMetrics;
       if (! Options.width || ! Options.height) {
         if (Options.font != null) { g.setFont(Options.font); }
-
-        let TextMetrics = g.stringMetrics(Options.label);
-        if (! Options.width) {
-          Result.width = TextMetrics.width + 2*(Options.pad || 0);
-        }
-
-        if (! Options.height) {
-          Result.height = TextMetrics.height + 2*(Options.pad || 0);
-        }
+        TextMetrics = g.stringMetrics(Options.label);
       }
+
+      Result.width  = Options.width  || TextMetrics.width  + 2*(Options.pad || 0);
+      Result.height = Options.height || TextMetrics.height + 2*(Options.pad || 0);
     return Result;
   }
