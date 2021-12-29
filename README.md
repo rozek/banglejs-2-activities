@@ -33,6 +33,14 @@ A click on one of the links shown below leads directly to the corresponding topi
  </tr>
 </table>
 
+### Theming ###
+
+<table>
+ <tr valign="top">
+   <td align="center"><img src="Theming/currentTheme.png"><br><a href="#theme-display">Theme Display</a></td>
+ </tr>
+</table>
+
 ### Analog Clock Faces ###
 
 <table>
@@ -231,6 +239,20 @@ More than 4 gradations of brightness or saturation don't seem useful as the resu
 As usual, here is a similar image generated using 24-bit graphics during a conversion to 3-bit colors:
 
 ![](Colors/ColorDisc-Conversion.png)
+
+## Theming ##
+
+In order to unify the visual appearance of multiple Bangle.js apps, users may configure a "theme" consisting of 6 different color settings.
+
+### Theme Display ###
+
+<img align="left" src="Theming/currentTheme.png">
+
+This example displays the currently active theme settings.
+
+The underlying [source code](Theming/currentTheme.js) for this example may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Theming/currentTheme.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Theming/currentTheme.js).
+
+<br clear="left">
 
 ## Analog Clock Faces ##
 
