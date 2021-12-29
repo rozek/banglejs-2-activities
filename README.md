@@ -244,7 +244,7 @@ At the time of this writing, there are many clock faces for the Bangle.js 2 - ev
 • [source code](ClockFaces/QuarterHourNumbers.js) for clock face only<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers.js)<br>&nbsp;<br>
- • [source code](ClockFaces/QuarterHourNumbers-with-Hands.js) for clock face and hands<br>
+• [source code](ClockFaces/QuarterHourNumbers-with-Hands.js) for clock face and hands<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers-with-Hands.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/QuarterHourNumbers-with-Hands.js)
 
@@ -259,12 +259,12 @@ A clock made with this face is perfectly readable even without backlight. If you
 <img align="left" src="ClockFaces/HourNumbers.png">
 <img align="left" src="ClockFaces/HourNumbers-with-Hands-dark.png">
 
-&nbsp; • [source code](ClockFaces/HourNumbers.js) for clock face only<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js)<br>&nbsp;<br>
-&nbsp; • [source code](ClockFaces/HourNumbers-with-Hands.js) for clock face and hands<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers-with-Hands.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers-with-Hands.js)
+• [source code](ClockFaces/HourNumbers.js) for clock face only<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers.js)<br>&nbsp;<br>
+• [source code](ClockFaces/HourNumbers-with-Hands.js) for clock face and hands<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers-with-Hands.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/HourNumbers-with-Hands.js)
 
 <br clear="left">
 
@@ -275,12 +275,12 @@ The referenced source code considers the currently configured "theme" (and may t
 <img align="left" src="ClockFaces/coloredHourNumbers.png">
 <img align="left" src="ClockFaces/coloredHourNumbers-with-Hands-dark.png">
 
-&nbsp; • [source code](ClockFaces/coloredHourNumbers.js) for clock face only<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js)<br>&nbsp;<br>
-&nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Hands.js) for clock face and hands<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Hands.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Hands.js)
+• [source code](ClockFaces/coloredHourNumbers.js) for clock face only<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers.js)<br>&nbsp;<br>
+• [source code](ClockFaces/coloredHourNumbers-with-Hands.js) for clock face and hands<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Hands.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Hands.js)
 
 <br clear="left">
 
@@ -291,12 +291,12 @@ The referenced source code considers the currently configured "theme" (and may t
 <img align="left" src="ClockFaces/coloredHourNumbers-with-Dots.png">
 <img align="left" src="ClockFaces/coloredHourNumbers-with-Dots-and-Hands-dark.png">
 
-&nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Dots.js) for clock face only<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js)<br>&nbsp;<br>
-&nbsp; • [source code](ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js) for clock face and hands<br>
-&nbsp; &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js) or<br>
-&nbsp; &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js)
+• [source code](ClockFaces/coloredHourNumbers-with-Dots.js) for clock face only<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots.js)<br>&nbsp;<br>
+• [source code](ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js) for clock face and hands<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/coloredHourNumbers-with-Dots-and-Hands.js)
 
 <br clear="left">
 
@@ -316,6 +316,8 @@ Every analog clock needs some hands - here are code snippets for clocks with hou
 
 The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
+<br>
+
 ### Hour, Minute and Second Hands ###
 
 <img align="left" src="ClockFaces/Hour+Minute+Second-Hands.png">
@@ -329,6 +331,8 @@ If you like it minimalistic, you may even make a clock just from these hands onl
 <br clear="left">
 
 The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
+
+<br>
 
 ### Widget Handling ###
 
