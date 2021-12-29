@@ -45,7 +45,7 @@ A click on one of the links shown below leads directly to the corresponding topi
 
 <table>
  <tr valign="top">
-   <td align="center"><img src="Theming/LabelDemo.png"><br><a href="#label">Label</a></td>
+   <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#label">Label</a></td>
  </tr>
 </table>
 
@@ -268,9 +268,9 @@ The built-in layout library significantly simplifies the implementation of non-t
 
 ### Label ###
 
-<img align="left" src="Layouting/LabelDemo.png">
+The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which provides proper text alignment. The screenshot shown below illustrates this feature:
 
-The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which provides proper text alignment. The screenshot on the left illustrates this feature
+<img align="left" src="Layouting/LabelDemo.png">
 
 • [source code](Layouting/Label.js) for the label component itself<br>&nbsp;<br>
 • [source code](Layouting/LabelDemo.js) for the demonstrator<br>
