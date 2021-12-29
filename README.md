@@ -279,6 +279,8 @@ The built-in "txt" component does not take any `halign` and `valign` settings in
 
 <br clear="left">
 
+The "Label" component additionally supports a `bold` option which may be set to `true` if bold text is needed. As a consequence, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This approach is not really efficient, but produces a rather good looking effect...
+
 ## Analog Clock Faces ##
 
 At the time of this writing, there are many clock faces for the Bangle.js 2 - even analog ones - but very few (one?) that also display numbers. The following examples have been written to fill this gap.
