@@ -1,14 +1,16 @@
   let ScreenWidth = g.getWidth();
   let ColumnWidth = ScreenWidth/4;                          // we plan 4 columns
 
-  g.clear(true);                                     // also loads current theme
-
   g.stringHeight = function stringHeight (Text) {
     return g.stringMetrics(Text).height;
   };
 
+  g.reset();                                              // loads current theme
+
   let Theme = g.theme;
-  g.setTheme({ fg:'#000000', bg:'#FFFFFF' });
+
+  g.setColor('#000000'); g.setBgColor('#FFFFFF');           // assert legibility
+  g.clear(false);
 
 /**** Label ****/
 
@@ -25,6 +27,7 @@
   function renderLabel (Details) {
     let x = Details.x, y = Details.y, Padding = Details.pad;
 
+    g.setColor('#000000');
     g.setFont12x20();
     g.setFontAlign(-1,-1);
     g.drawString(Details.label, x+Padding,y+Padding);
@@ -46,6 +49,7 @@
     let x = Details.x, y = Details.y, Width = Details.w, Height = Details.h;
     let Padding = Details.pad;
 
+    g.setColor('#000000');
     g.drawRect(x+Padding,y+Padding, x+Width-Padding,y+Height-Padding);
 
     g.setColor(Details.color);
