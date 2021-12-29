@@ -25,11 +25,11 @@
 
         let TextMetrics = g.stringMetrics(Options.label);
         if (! Options.width) {
-          Options.width = TextMetrics.width + 2*(Options.pad || 0);
+          Result.width = TextMetrics.width + 2*(Options.pad || 0);
         }
 
         if (! Options.height) {
-          Options.height = TextMetrics.height + 2*(Options.pad || 0);
+          Result.height = TextMetrics.height + 2*(Options.pad || 0);
         }
       }
     return Result;
