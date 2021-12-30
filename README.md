@@ -71,7 +71,7 @@ A click on one of the links shown below leads directly to the corresponding topi
  <tr valign="top">
    <td align="center"><img src="Miscellany/drawRoundedRect-Demo.png"><br><a href="#drawRoundedRect">drawRoundedRect</a></td>
    <td align="center"><img src="Miscellany/fillRoundedRect-Demo.png"><br><a href="#fillRoundedRect">fillRoundedRect</a></td>
-   <td align="center"><img src="Miscellany/drawMoonPhases-Demo.png"><br><a href="#drawMoonPhases">drawMoonPhases</a></td>
+   <td align="center"><img src="Miscellany/drawMoonPhase-Demo.png"><br><a href="#drawMoonPhase">drawMoonPhase</a></td>
  </tr>
 </table>
 
