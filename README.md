@@ -422,11 +422,15 @@ Please note: widget display on a dark background is not yet optimal - does anybo
 
 ### drawRoundedRect ###
 
+<br clear="left">
+
 ### fillRoundedRect ###
+
+<br clear="left">
 
 ### drawMoonPhase ###
 
-As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was written after a request from user "HilmarSt" in the [Espruino forum](http://forum.espruino.com/comments/16328480/).
+As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was written upon a request from user "HilmarSt" in the [Espruino forum](http://forum.espruino.com/comments/16328480/).
 
 <img align="left" src="Miscellany/drawMoonPhase-Demo.png">
 
@@ -435,6 +439,27 @@ As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was wri
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js)
 
+<br clear="left">
+
+`drawMoonPhase` has the signature
+
+```
+drawMoonPhase(CenterX,CenterY, MoonRadius, leftFactor,rightFactor);
+```
+
+with the following arguments:
+
+* `CenterX` - x coordinate of moon center
+* `CenterY` - y coordinate of moon center
+* `MoonRadius` - moon radius
+* `leftFactor` - is used to control the moon phase (see below)
+* `rightFactor` - is used to control the moon phase (see below)
+
+`leftFactor` and `rightFactor` are values in the range `-1.0...1.0` which control the actually shown moon phase:
+
+* `rightFactor = 1.0` and `leftFactor` starting from `-1.0` and increasing up to `1.0` shows a waxing moon
+* `rightFactor = 1.0` and `leftFactor = 1.0` show a full moon
+* `leftFactor = 1.0` and `rightFactor` starting from `1.0` and decreasing down to `-1.0` show a waning moon
 
 ## License ##
 
