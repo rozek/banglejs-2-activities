@@ -289,7 +289,9 @@ The built-in layout library significantly simplifies the implementation of non-t
 
 ### Label ###
 
-The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which provides proper text alignment. The screenshot shown below illustrates this feature:
+The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which provides proper text alignment.
+
+Additionally, the component also supports a `bold` option which may be set to `true` if the given text should be shown in bold. The following screenshot shown below illustrates this feature:
 
 <img align="left" src="Layouting/LabelDemo.png">
 
@@ -301,7 +303,7 @@ The built-in "txt" component does not take any `halign` and `valign` settings in
 <br clear="left">
 &nbsp;<br>
 
-The "Label" component additionally supports a `bold` option which may be set to `true` if bold text is needed. As a consequence, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This approach is not really efficient, but produces a reasonably good looking effect independent of the font used...
+If `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
 ## Analog Clock Faces ##
 
