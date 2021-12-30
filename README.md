@@ -319,7 +319,9 @@ and the following arguments:
 * `halign` - is taken into account when drawing the given `Text`
 * `valign` - is taken into account when drawing the given `Text`
 * `bold` - is a boolean value which, when set to `true`, displays the given `Text` in bold
- 
+
+Any unknown option is simply passed through to the layout library.
+
 If `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
 ## Analog Clock Faces ##
