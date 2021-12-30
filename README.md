@@ -65,6 +65,16 @@ A click on one of the links shown below leads directly to the corresponding topi
  </tr>
 </table>
 
+### Miscellany ###
+
+<table>
+ <tr valign="top">
+   <td align="center"><img src="Miscellany/drawRoundedRect-Demo.png"><br><a href="#drawRoundedRect">drawRoundedRect</a></td>
+   <td align="center"><img src="Miscellany/fillRoundedRect-Demo.png"><br><a href="#fillRoundedRect">fillRoundedRect</a></td>
+   <td align="center"><img src="Miscellany/drawMoonPhases-Demo.png"><br><a href="#drawMoonPhases">drawMoonPhases</a></td>
+ </tr>
+</table>
+
 ## Color Handling ##
 
 ### Basic Colors ###
