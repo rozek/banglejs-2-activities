@@ -426,7 +426,7 @@ The need to draw rectangles with rounded corners arose while developing an app w
 
 <img align="left" src="Miscellany/drawRoundedRect-Demo.png">
 
-• [source code](Miscellany/drawRoundedRect.js) for `drawRoundedRect` only<br>&nbsp;<br>
+• [source code](Miscellany/drawRoundedRect.js) for `drawRoundedRect` itself<br>&nbsp;<br>
 • [source code](Miscellany/drawRoundedRect-Demo.js) for the demonstrator<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawRoundedRect-Demo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawRoundedRect-Demo.js)
@@ -454,9 +454,35 @@ with the following arguments:
 
 ### fillRoundedRect ###
 
+`fillRoundedRect` is a by-product of the `drawRoundedRect` development
+
 <img align="left" src="Miscellany/fillRoundedRect-Demo.png">
 
+• [source code](Miscellany/fillRoundedRect.js) for `fillRoundedRect` itself<br>&nbsp;<br>
+• [source code](Miscellany/fillRoundedRect-Demo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/fillRoundedRect-Demo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/fillRoundedRect-Demo.js)
+
 <br clear="left">
+&nbsp;<br>
+
+`fillRoundedRect` has the signature
+
+```
+g.fillRoundedRect(x1,y1, x2,y2, r);
+```
+
+with the following arguments:
+
+* `x1` - x coordinate of first corner
+* `y1` - y coordinate of first corner
+* `x2` - x coordinate of second corner (opposite the first one)
+* `y2` - y coordinate of second corner (opposite the first one)
+* `r` - corner radius
+
+`r` is limited to 50% of the shorter side of the rectangle and will be reduced automatically when needed.
+
+`fillRoundedRect` has been designed as a "polyfill" for the global graphics context `g` (and will no longer install itself as soon as Espruino provides its own method with that name) and fills the (rounded) rectangle with the current foreground color.
 
 ### drawMoonPhase ###
 
@@ -464,7 +490,7 @@ As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was wri
 
 <img align="left" src="Miscellany/drawMoonPhase-Demo.png">
 
-• [source code](Miscellany/drawMoonPhase.js) for `drawMoonPhase` only<br>&nbsp;<br>
+• [source code](Miscellany/drawMoonPhase.js) for `drawMoonPhase` itself<br>&nbsp;<br>
 • [source code](Miscellany/drawMoonPhase-Demo.js) for the demonstrator<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js)
