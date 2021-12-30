@@ -514,7 +514,7 @@ with the following arguments:
 
 `leftFactor` and `rightFactor` are values in the range `-1.0...1.0` which control the actually shown moon phase:
 
-* `rightFactor = 1.0` and `leftFactor` starting from `-1.0` and increasing up to `1.0` shows a waxing moon
+* `rightFactor = 1.0` and `leftFactor` starting from `-1.0` and increasing up to `1.0` show a waxing moon
 * `rightFactor = 1.0` and `leftFactor = 1.0` show a full moon
 * `leftFactor = 1.0` and `rightFactor` starting from `1.0` and decreasing down to `-1.0` show a waning moon
 
