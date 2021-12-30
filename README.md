@@ -437,7 +437,7 @@ The need to draw rectangles with rounded corners arose while developing an app w
 `drawRoundedRect` has the signature
 
 ```
-drawRoundedRect(x1,y1, x2,y2, r);
+g.drawRoundedRect(x1,y1, x2,y2, r);
 ```
 
 with the following arguments:
@@ -448,7 +448,9 @@ with the following arguments:
 * `y2` - y coordinate of second corner (opposite the first one)
 * `r` - corner radius
 
-`r` is limited to 50% of the shorter side of the rectangle and will be reduced automatically when needed
+`r` is limited to 50% of the shorter side of the rectangle and will be reduced automatically when needed.
+
+`drawRoundedRect` has been designed as a "polyfill" for the global graphics context `g` (and will no longer install itself as soon as Espruino provides its own method with that name) and draws the (rounded) rectangle in the current foreground color.
 
 ### fillRoundedRect ###
 
