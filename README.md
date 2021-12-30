@@ -289,9 +289,9 @@ The built-in layout library significantly simplifies the implementation of non-t
 
 ### Label ###
 
-The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which provides proper text alignment.
+The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which properly aligns text as specified.
 
-Additionally, the component also supports a `bold` option which may be set to `true` if the given text should be shown in bold. The following screenshot shown below illustrates this feature:
+Additionally, the component also provides a `bold` option which may be set to `true` if the given text should be shown in bold. The following screenshot shown below illustrates this feature:
 
 <img align="left" src="Layouting/LabelDemo.png">
 
