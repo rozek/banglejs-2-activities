@@ -303,6 +303,23 @@ Additionally, the component also provides a `bold` option which may be set to `t
 <br clear="left">
 &nbsp;<br>
 
+`Label` is actually a factory function with the following signature:
+
+```
+Label(Text, Options)
+```
+
+and the following arguments:
+
+* `Text` - contains the text to be shown
+* `Options` - is an optional object containing named options (see below)
+
+`Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `font`, `col`, `bgCol` etc.) with the following particularities:
+
+* `halign` - is taken into account when drawing the given `Text`
+* `valign` - is taken into account when drawing the given `Text`
+* `bold` - is a boolean value which, when set to `true`, displays the given `Text` in bold
+ 
 If `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
 ## Analog Clock Faces ##
