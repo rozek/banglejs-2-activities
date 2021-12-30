@@ -422,9 +422,20 @@ Please note: widget display on a dark background is not yet optimal - does anybo
 
 ### drawRoundedRect ###
 
+The need to draw rectangles with rouded corners arose while developing an app with (customizable) buttons in its user interface. The current code was developed based on a hint at a Bresenham algorithm for circles mentioned by user "RaoulDuke" in the [Espruino forum](http://forum.espruino.com/comments/16328337/) and the discussions that followed.
+
+<img align="left" src="Miscellany/drawRoundedRect-Demo.png">
+
+• [source code](Miscellany/drawRoundedRect.js) for `drawRoundedRect` only<br>&nbsp;<br>
+• [source code](Miscellany/drawRoundedRect-Demo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawRoundedRect-Demo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawRoundedRect-Demo.js)
+
 <br clear="left">
 
 ### fillRoundedRect ###
+
+<img align="left" src="Miscellany/fillRoundedRect-Demo.png">
 
 <br clear="left">
 
