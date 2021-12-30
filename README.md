@@ -422,7 +422,7 @@ Please note: widget display on a dark background is not yet optimal - does anybo
 
 ### drawRoundedRect ###
 
-The need to draw rectangles with rouded corners arose while developing an app with (customizable) buttons in its user interface. The current code was developed based on a hint at a Bresenham algorithm for circles mentioned by user "RaoulDuke" in the [Espruino forum](http://forum.espruino.com/comments/16328337/) and the discussions that followed.
+The need to draw rectangles with rounded corners arose while developing an app with (customizable) buttons in its user interface. The current code was developed based on a hint at a Bresenham algorithm for circles mentioned by user "RaoulDuke" in the [Espruino forum](http://forum.espruino.com/comments/16328337/) and the discussions that followed.
 
 <img align="left" src="Miscellany/drawRoundedRect-Demo.png">
 
