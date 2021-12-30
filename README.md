@@ -418,6 +418,24 @@ Please note: widget display on a dark background is not yet optimal - does anybo
 
 <br clear="left">
 
+## Miscellany ##
+
+### drawRoundedRect ###
+
+### fillRoundedRect ###
+
+### drawMoonPhase ###
+
+As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was written after a request from user "HilmarSt" in the [Espruino forum](http://forum.espruino.com/comments/16328480/).
+
+<img align="left" src="Miscellany/drawMoonPhase-Demo.png">
+
+• [source code](Miscellany/drawMoonPhase.js) for `drawMoonPhase` only<br>&nbsp;<br>
+• [source code](Miscellany/drawMoonPhase-Demo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js)
+
+
 ## License ##
 
 [MIT License](LICENSE.md)
