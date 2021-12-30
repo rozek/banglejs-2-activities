@@ -38,6 +38,7 @@ A click on one of the links shown below leads directly to the corresponding topi
 <table>
  <tr valign="top">
    <td align="center"><img src="Theming/currentTheme.png"><br><a href="#theme-display">Theme Display</a></td>
+   <td align="center"><img src="Theming/ThemeSetter-MainScreen.png"><br><a href="#themesetter">Theme Setter</a></td>
  </tr>
 </table>
 
@@ -259,6 +260,16 @@ In order to unify the visual appearance of multiple Bangle.js apps, users may co
 This example displays the currently active theme settings.
 
 The underlying [source code](Theming/currentTheme.js) for this example may be run both in the [emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Theming/currentTheme.js) and on a [real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Theming/currentTheme.js).
+
+<br clear="left">
+
+### ThemeSetter ###
+
+<img align="left" src="Theming/ThemeSetter-MainScreen.png">
+<img align="left" src="Theming/ThemeSetter-DetailSelectionScreen.png">
+<img align="left" src="Theming/ThemeSetter-ColorSelectionScreen.png">
+<img align="left" src="Theming/ThemeSetter-ThemePreviewScreen.png">
+
 
 <br clear="left">
 
