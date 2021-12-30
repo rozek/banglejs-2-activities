@@ -440,6 +440,7 @@ As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was wri
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawMoonPhase-Demo.js)
 
 <br clear="left">
+&nbsp;<br>
 
 `drawMoonPhase` has the signature
 
