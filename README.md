@@ -432,6 +432,23 @@ The need to draw rectangles with rounded corners arose while developing an app w
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Miscellany/drawRoundedRect-Demo.js)
 
 <br clear="left">
+&nbsp;<br>
+
+`drawRoundedRect` has the signature
+
+```
+drawRoundedRect(x1,y1, x2,y2, r);
+```
+
+with the following arguments:
+
+* `x1` - x coordinate of first corner
+* `y1` - y coordinate of first corner
+* `x2` - x coordinate of second corner (opposite the first one)
+* `y2` - y coordinate of second corner (opposite the first one)
+* `r` - corner radius
+
+`r` is limited to 50% of the shorter side of the rectangle and will be reduced automatically when needed
 
 ### fillRoundedRect ###
 
