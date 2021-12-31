@@ -288,7 +288,7 @@ The underlying [source code](Theming/currentTheme.js) for this example may be ru
 
 The built-in layout library significantly simplifies the implementation of non-trivial user interfaces. It has its limitations, but these may easily be overcome with "custom renderers" and functions which generate the appropriate layout descriptions.
 
-### additional Concepts ###
+### Additional Concepts ###
 
 The built-in "layout" library is really helpful when it comes to creating non-trivial user interfaces on the Bangle - but it has its limitations. Two of them are really painful:
 
@@ -300,6 +300,77 @@ The controls mentioned in this section deal with these pain points in the follow
 * "factory functions" - to be used instead of object literals - provide a more abstract and, thus, more comfortable way of describing individual components as they can hide details of their settings from the programmer
 * "common settings" may be defined (once) in form of an object literal and then provided as part of a control description in a (newly introduced) `common` attribute - the "factory functions" already take care of this attribute and use them as defaults. "Common settings" may be easily cascaded (by means of `Object.assign`) and overwritten in factory functions, if need be
 
+#### Factory Functions ####
+
+Using factory functions is easy - as shown in the following (synthetic) example:
+
+```
+let Display = new Layout(
+  Label('Test',{ bold:true })
+);
+Display.render();
+```
+
+Their output is nothing else but a plain JavaScript object as it is expected by the layout library. Most often, the `type` of such a description will be `custom` - in that case, the factory function also provides the appropriate `render` function.
+
+The following code (taken from the "Label" component) shows a typical implementation of such a "factory function":
+
+```
+  function Label (Text, Options) {
+    function renderLabel (Details) {
+      let halfWidth  = Details.w/2, xAlignment = Details.halign || 0;
+      let halfHeight = Details.h/2, yAlignment = Details.valign || 0;
+      let Padding = Details.pad || 0;
+
+      g.setColor(Details.col || g.theme.fg || '#000000');
+
+      if (Details.font != null) { g.setFont(Details.font); }
+      g.setFontAlign(xAlignment,yAlignment);
+
+      let x = Details.x + halfWidth  + xAlignment*(halfWidth+Padding);
+      let y = Details.y + halfHeight + yAlignment*(halfHeight+Padding);
+
+      g.drawString(Details.label, x,y);
+      if (Details.bold) {
+        g.drawString(Details.label, x+1,y);
+        g.drawString(Details.label, x,y+1);
+        g.drawString(Details.label, x+1,y+1);
+      }
+    }
+
+    let Result = Object.assign((
+      Options == null ? {} : Object.assign({}, Options.common || {}, Options)
+    ), {
+      type:'custom', render:renderLabel, label:Text || ''
+    });
+      let TextMetrics;
+      if (! Result.width || ! Result.height) {
+        if (Result.font != null) { g.setFont(Result.font); }
+        TextMetrics = g.stringMetrics(Result.label);
+      }
+
+      Result.width  = Result.width  || TextMetrics.width  + 2*(Result.pad || 0);
+      Result.height = Result.height || TextMetrics.height + 2*(Result.pad || 0);
+    return Result;
+  }
+```
+
+It supports an `Options` argument for specific settings, takes care of "common settings" (see below), computes its minimal size and provides its own renderer.
+
+#### Common Settings ####
+
+Using common settings is easy - as shown in the following (synthetic) example:
+
+```
+let StdFont = { font:'12x20' };
+let legible = Object.assign({ col:'#000000', bgCol:'#FFFFFF' }, StdFont);
+let Display = new Layout(
+  Label('Test',{ common:commonSettings, bold:true })
+);
+Display.render();
+```
+
+Common settings are plain JavaScript objects containing attributes supported by the layout library (or individual factory functions) with values that should be shared. With the help of `Object.assign`, individual settings may be cascaded and merged into new ones. Attributes specified alongside common settings have priority and override them.
 
 ### Label ###
 
