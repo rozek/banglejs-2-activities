@@ -372,6 +372,83 @@ Display.render();
 
 Common settings are plain JavaScript objects containing attributes supported by the layout library (or individual factory functions) with values that should be shared. With the help of `Object.assign`, individual settings may be cascaded and merged into new ones. Attributes specified alongside common settings have priority and override them.
 
+#### Generic Event Dispatching ####
+
+Some user interfaces may not expect user interaction - but most of them do. Until now, the layout library provides very little support for event handling only. The "generic event dispatching" described below solves this problem in a very lightweight way by scanning the currently active layout for the outermost control at the location of a touch (or similar) in invoking that control's handler for the event (if one is provided). In this way, every control (even labels or vertical/horizontal layouts) may react to any kind of event.
+
+"Generic event dispatching" requires a few common functions and event-spcific handler functions in any event consuming controls.
+
+```
+let activeLayout;
+
+/**** EventConsumerAtPoint ****/
+
+  function EventConsumerAtPoint (HandlerName, x,y) {
+    let Layout = (activeLayout || {}).l;
+    if (Layout == null) { return; }
+
+    function ConsumerIn (Control) {
+      if (
+        (x < Control.x) || (x >= Control.x + Control.w) ||
+        (y < Control.y) || (y >= Control.y + Control.h)
+      ) { return undefined; }
+
+      if (typeof Control[HandlerName] === 'function') { return Control; }
+
+      if (Control.c != null) {
+        let ControlList = Control.c;
+        for (let i = 0, l = ControlList.length; i < l; i++) {
+          let Consumer = ConsumerIn(ControlList[i]);
+          if (Consumer != null) { return Consumer; }
+        }
+      }
+
+      return undefined;
+    }
+
+    return ConsumerIn(Layout);
+  }
+  
+  /**** dispatchTouchEvent ****/
+
+  function dispatchTouchEvent () {
+    function handleTouchEvent (Button, xy) {
+      let Control = EventConsumerAtPoint('onTouch', xy.x,xy.y);
+      if (Control != null) {
+        Control.onTouch(Control, Button, xy);
+      }
+    }
+    Bangle.on('touch',handleTouchEvent);
+  }
+  dispatchTouchEvent();
+
+/**** dispatchStrokeEvent ****/
+
+  function dispatchStrokeEvent () {
+    function handleStrokeEvent (Coordinates) {
+      let Control = EventConsumerAtPoint('onStroke', Coordinates.xy[0],Coordinates.xy[1]);
+      if (Control != null) {
+        Control.onStroke(Control, Coordinates);
+      }
+    }
+    Bangle.on('stroke',handleStrokeEvent);
+  }
+  dispatchStrokeEvent();
+```
+
+After evaluation the code from above, event handling becomes really easy:
+
+```
+  let Layout = require('Layout');
+  let activeLayout = new Layout({
+    type:'txt', label:'Touch here', id:'Test',
+      onTouch:(Control) => { print('touched "' + Control.id + '"'); }
+  });
+  activeLayout.render();
+```
+
+Several "screens" may be implemented by changing (and rerendering) `activeLayout` - events will always be dispatched to the currently active screen.
+
 ### Label ###
 
 The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which properly aligns text as specified.
