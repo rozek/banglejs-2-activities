@@ -359,6 +359,8 @@ It supports an `Options` argument for specific settings, takes care of "common s
 
 #### Common Settings ####
 
+"Common settings" are like style classes for HTML elements  - but stripped down and simplified for Bangle.js.
+
 Using common settings is easy - as shown in the following (synthetic) example:
 
 ```
