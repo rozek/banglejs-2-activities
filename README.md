@@ -376,7 +376,7 @@ Display.render();
 
 Some user interfaces may not expect user interaction - but most of them do. Until now, the layout library provides very little support for event handling only. The "generic event dispatching" described below solves this problem in a very lightweight way by scanning the currently active layout for the outermost control at the location of a touch (or similar) and invoking that control's handler for the event (if one is provided). In this way, every control (even labels or vertical/horizontal layouts) may react to any kind of event.
 
-"Generic event dispatching" requires a few common functions and event-spcific handler functions in any event consuming controls.
+"Generic event dispatching" requires a few common functions and event-specific handler functions in any event consuming controls.
 
 ```
 let activeLayout;
