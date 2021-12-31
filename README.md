@@ -287,7 +287,7 @@ The underlying [source code](Theming/currentTheme.js) for this example may be ru
 
 Right now, you may find the app in [the author's personal app store](https://rozek.github.io/BangleApps/#tool) only - but soon, hopefully, in the official one as well.
 
-Its source code may be found on [GitHub](https://github.com/rozek/BangleApps/tree/master/apps/themesetter) as well.
+The underlying sources may be found in another repository on [GitHub](https://github.com/rozek/BangleApps/tree/master/apps/themesetter).
 
 ## Layouting ##
 
