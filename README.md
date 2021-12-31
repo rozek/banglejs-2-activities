@@ -287,6 +287,8 @@ The underlying [source code](Theming/currentTheme.js) for this example may be ru
 
 Right now, you may find the app in [the author's personal app store](https://rozek.github.io/BangleApps/#tool) only - but soon, hopefully, in the official one as well.
 
+Its source code may be found on [GitHub](https://github.com/rozek/BangleApps/tree/master/apps/themesetter) as well.
+
 ## Layouting ##
 
 The built-in layout library significantly simplifies the implementation of non-trivial user interfaces. It has its limitations, but these may easily be overcome with "custom renderers" and functions which generate the appropriate layout descriptions.
