@@ -22,16 +22,18 @@
       }
     }
 
-    let Result = Object.assign({}, Options || {}, {
+    let Result = Object.assign((
+      Options == null ? {} : Object.assign({}, Options.common || {}, Options)
+    ), {
       type:'custom', render:renderLabel, label:Text || ''
     });
       let TextMetrics;
-      if (! Options.width || ! Options.height) {
-        if (Options.font != null) { g.setFont(Options.font); }
+      if (! Result.width || ! Result.height) {
+        if (Result.font != null) { g.setFont(Result.font); }
         TextMetrics = g.stringMetrics(Result.label);
       }
 
-      Result.width  = Options.width  || TextMetrics.width  + 2*(Options.pad || 0);
-      Result.height = Options.height || TextMetrics.height + 2*(Options.pad || 0);
+      Result.width  = Result.width  || TextMetrics.width  + 2*(Result.pad || 0);
+      Result.height = Result.height || TextMetrics.height + 2*(Result.pad || 0);
     return Result;
   }
