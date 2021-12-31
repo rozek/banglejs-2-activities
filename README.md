@@ -311,7 +311,7 @@ let Display = new Layout(
 Display.render();
 ```
 
-Their output is nothing else but a plain JavaScript object as it is expected by the layout library. Most often, the `type` of such a description will be `custom` - in that case, the factory function also provides the appropriate `render` function.
+Their output is nothing else but a plain JavaScript object as expected by the layout library. Most often, the `type` of such a description will be `custom` - in that case, the factory function also provides the appropriate `render` function.
 
 The following code (taken from the "Label" component) shows a typical implementation of such a "factory function":
 
