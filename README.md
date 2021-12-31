@@ -300,6 +300,8 @@ Additionally, the component also provides a `bold` option which may be set to `t
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js)
 
+(the demonstrator also already uses the new "common settings" feature)
+
 <br clear="left">
 &nbsp;<br>
 
