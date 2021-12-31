@@ -276,13 +276,16 @@ The underlying [source code](Theming/currentTheme.js) for this example may be ru
 
 ### ThemeSetter ###
 
+"Theme Setter" is a small application allowing to configure the global theming of bangle.js apps (provided that these apps consider the configured theme and do not provide their own color settings)
+
 <img align="left" src="Theming/ThemeSetter-MainScreen.png">
 <img align="left" src="Theming/ThemeSetter-DetailSelectionScreen.png">
 <img align="left" src="Theming/ThemeSetter-ColorSelectionScreen.png">
 <img align="left" src="Theming/ThemeSetter-ThemePreviewScreen.png">
 
-
 <br clear="left">
+
+Right now, you may find the app in [the author's personal app store](https://rozek.github.io/BangleApps/#tool) only - but soon, hopefully, in the official one as well.
 
 ## Layouting ##
 
