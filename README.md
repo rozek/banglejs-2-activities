@@ -370,7 +370,7 @@ let Display = new Layout(
 Display.render();
 ```
 
-Common settings are plain JavaScript objects containing attributes supported by the layout library (or individual factory functions) with values that should be shared. With the help of `Object.assign`, individual settings may be cascaded and merged into new ones. Attributes specified alongside common settings have priority and override them.
+"Common settings" are plain JavaScript objects containing attributes supported by the layout library (or "factory functions") with values that should be shared. With the help of `Object.assign`, individual settings may be cascaded and merged into new ones. Attributes specified alongside common settings have priority and override them.
 
 #### Generic Event Dispatching ####
 
