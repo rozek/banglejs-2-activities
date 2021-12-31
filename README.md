@@ -293,7 +293,7 @@ The built-in layout library significantly simplifies the implementation of non-t
 The built-in "layout" library is really helpful when it comes to creating non-trivial user interfaces on the Bangle - but it has its limitations. Two of them are really painful:
 
 * the set of built-in component types is rather limited - fortunately, however, you can provide your own renderers, at least
-* the way of describing a user interface tends to repeated writing down of the same settings over and over again
+* the way of describing a user interface tends to repetitive writing down of the same settings over and over again
 
 The controls mentioned in this section deal with these pain points in the following manner:
 
