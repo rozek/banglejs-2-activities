@@ -46,6 +46,7 @@ A click on one of the links shown below leads directly to the corresponding topi
 
 <table>
  <tr valign="top">
+   <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#additional-concepts">additional Concepts</a></td>
    <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#label">Label</a></td>
  </tr>
 </table>
@@ -286,6 +287,19 @@ The underlying [source code](Theming/currentTheme.js) for this example may be ru
 ## Layouting ##
 
 The built-in layout library significantly simplifies the implementation of non-trivial user interfaces. It has its limitations, but these may easily be overcome with "custom renderers" and functions which generate the appropriate layout descriptions.
+
+### additional Concepts ###
+
+The built-in "layout" library is really helpful when it comes to creating non-trivial user interfaces on the Bangle - but it has its limitations. Two of them are really painful:
+
+* the set of built-in component types is rather limited - fortunately, however, you can provide your own renderers, at least
+* the way of describing a user interface tends to repeated writing down of the same settings over and over again
+
+The controls mentioned in this section deal with these pain points in the following manner:
+
+* "factory functions" - to be used instead of object literals - provide a more abstract and, thus, more comfortable way of describing individual components as they can hide details of their settings from the programmer
+* "common settings" may be defined (once) in form of an object literal and then provided as part of a control description in a (newly introduced) `common` attribute - the "factory functions" already take care of this attribute and use them as defaults. "Common settings" may be easily cascaded (by means of `Object.assign`) and overwritten in factory functions, if need be
+
 
 ### Label ###
 
