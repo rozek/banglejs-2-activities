@@ -436,7 +436,7 @@ let activeLayout;
   dispatchStrokeEvent();
 ```
 
-After evaluation the code from above, event handling becomes really easy:
+After executing the code from above, event handling becomes really easy:
 
 ```
   let Layout = require('Layout');
