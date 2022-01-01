@@ -3,7 +3,7 @@
 
   let outerRadius = Math.min(CenterX,CenterY) * 0.9;
 
-  let HourHandLength = outerRadius * 0.4;
+  let HourHandLength = outerRadius * 0.5;
   let HourHandWidth  = 2*5, halfHourHandWidth = HourHandWidth/2;
 
   let MinuteHandLength = outerRadius * 0.7;
