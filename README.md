@@ -599,7 +599,7 @@ The referenced source code considers the currently configured "theme" (and may t
 
 ### Rounded Hands ###
 
-At the request of user "HughB" the author has also implemented some "rounded hands".
+At the request of user "HughB" from the [Espruino forum](http://forum.espruino.com/comments/16329708/) the author has also implemented some "rounded hands".
 
 <img align="left" src="ClockFaces/roundedHands.png">
 
@@ -616,7 +616,7 @@ The referenced source code considers the currently configured "theme" (and may t
 
 ### Hollow Hands ###
 
-At the request of user "HughB" the author has implemented "hollow hands" which can be found in some mechanical watches.
+At the request of user "HughB" from the [Espruino forum](http://forum.espruino.com/comments/16329708/) the author has implemented "hollow hands" which can be found in some mechanical watches.
 
 <img align="left" src="ClockFaces/hollowHands.png">
 
