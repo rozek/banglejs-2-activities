@@ -609,6 +609,8 @@ At the request of user "HughB" from the [Espruino forum](http://forum.espruino.c
 
 These hands also include a stylish "bolt" in the center.
 
+A minimal clock with just these hands only (and no real clock face) can be found in the author's [personal app store](https://rozek.github.io/BangleApps/#clock).
+
 <br clear="left">
 &nbsp;<br>
 
