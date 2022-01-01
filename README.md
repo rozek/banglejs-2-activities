@@ -63,6 +63,7 @@ A click on one of the links shown below leads directly to the corresponding topi
  <tr valign="top">
    <td align="center"><img src="ClockFaces/Hour+Minute-Hands.png"><br><a href="#hour-and-minute-hands">Hour and Minute Hands</a></td>
    <td align="center"><img src="ClockFaces/Hour+Minute+Second-Hands.png"><br><a href="#hour-minute-and-second-hands">Hour, Minute and<br>Second Hands</a></td>
+   <td align="center"><img src="ClockFaces/roundedHands.png"><br><a href="#rounded-hands">rounded Hands</a></td>
    <td align="center"><img src="ClockFaces/hollowHands.png"><br><a href="#hollow-hands">hollow Hands</a></td>
  </tr>
 </table>
@@ -596,9 +597,26 @@ If you like it minimalistic, you may even make a clock just from these hands onl
 
 The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
+### Rounded Hands ###
+
+At the request of user "HughB" from the [Espruino forum](http://forum.espruino.com/comments/16329708/) the author has also implemented some "rounded hands".
+
+<img align="left" src="ClockFaces/roundedHands.png">
+
+• [source code](ClockFaces/roundedHands.js) for hands<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/roundedHands.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/roundedHands.js)
+
+These hands also include a stylish "bolt" in the center.
+
+<br clear="left">
+&nbsp;<br>
+
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
+
 ### Hollow Hands ###
 
-At the request of user "HughB" the author has implemented "hollow hands" which can be found in some mechanical watches.
+At the request of user "HughB" from the [Espruino forum](http://forum.espruino.com/comments/16329708/) the author has implemented the "hollow hands" which can be found in some mechanical watches.
 
 <img align="left" src="ClockFaces/hollowHands.png">
 
