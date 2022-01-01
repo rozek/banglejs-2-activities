@@ -606,6 +606,8 @@ At the request of user "HughB" the author has implemented "hollow hands" which c
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/hollowHands.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/ClockFaces/hollowHands.js)
 
+These hands also include a small "bolt" in the center.
+
 <br clear="left">
 
 ### Widget Handling ###
