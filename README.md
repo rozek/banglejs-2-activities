@@ -616,7 +616,7 @@ The referenced source code considers the currently configured "theme" (and may t
 
 ### Hollow Hands ###
 
-At the request of user "HughB" from the [Espruino forum](http://forum.espruino.com/comments/16329708/) the author has implemented "hollow hands" which can be found in some mechanical watches.
+At the request of user "HughB" from the [Espruino forum](http://forum.espruino.com/comments/16329708/) the author has implemented the "hollow hands" which can be found in some mechanical watches.
 
 <img align="left" src="ClockFaces/hollowHands.png">
 
