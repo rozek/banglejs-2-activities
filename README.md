@@ -609,6 +609,9 @@ At the request of user "HughB" the author has implemented "hollow hands" which c
 These hands also include a small "bolt" in the center.
 
 <br clear="left">
+&nbsp;<br>
+
+The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
 ### Widget Handling ###
 
