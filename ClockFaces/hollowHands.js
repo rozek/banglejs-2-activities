@@ -13,7 +13,7 @@
   let HandOffset = BoltRadius + 15;
 
   let SecondHandLength = outerRadius * 0.9;
-  let SecondHandOffset = 6;
+  let SecondHandOffset = 10;
 
   let twoPi  = 2*Math.PI, deg2rad = Math.PI/180;
   let Pi     = Math.PI;
