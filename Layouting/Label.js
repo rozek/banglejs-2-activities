@@ -2,20 +2,25 @@
 
   function Label (Text, Options) {
     function renderLabel (Details) {
-      let halfWidth  = Details.w/2, xAlignment = Details.halign || 0;
-      let halfHeight = Details.h/2, yAlignment = Details.valign || 0;
+      let x = Details.x, xAlignment = Details.halign || 0;
+      let y = Details.y, yAlignment = Details.valign || 0;
+      let Width  = Details.w, halfWidth  = Width/2;
+      let Height = Details.h, halfHeight = Height/2;
       let Padding = Details.pad || 0;
+      let bold    = Details.bold ? 1 : 0;
 
       g.setColor(Details.col || g.theme.fg || '#000000');
 
       if (Details.font != null) { g.setFont(Details.font); }
       g.setFontAlign(xAlignment,yAlignment);
 
-      let x = Details.x + halfWidth  + xAlignment*(halfWidth+Padding);
-      let y = Details.y + halfHeight + yAlignment*(halfHeight+Padding);
+      g.setClipRect(x,y, x + Width + bold,y + Height + bold);
+
+      x += halfWidth  + xAlignment*(halfWidth +Padding);
+      y += halfHeight + yAlignment*(halfHeight+Padding);
 
       g.drawString(Details.label, x,y);
-      if (Details.bold) {
+      if (bold !== 0) {
         g.drawString(Details.label, x+1,y);
         g.drawString(Details.label, x,y+1);
         g.drawString(Details.label, x+1,y+1);
