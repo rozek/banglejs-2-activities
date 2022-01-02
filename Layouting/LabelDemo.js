@@ -19,7 +19,7 @@
       if (Details.font != null) { g.setFont(Details.font); }
       g.setFontAlign(xAlignment,yAlignment);
 
-      g.setClipRect(x,y, x + Width + bold,y + Height + bold);
+      g.setClipRect(x,y, x + Width-1 + bold,y + Height-1 + bold);
 
       x += halfWidth  + xAlignment*(halfWidth +Padding);
       y += halfHeight + yAlignment*(halfHeight+Padding);
