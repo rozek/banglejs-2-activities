@@ -420,11 +420,17 @@ Some user interfaces may not expect user interaction - but most of them do. Unti
   
 /**** dispatchTouchEvent ****/
 
-  function dispatchTouchEvent () {
+  function dispatchTouchEvent (DefaultHandler) {
     function handleTouchEvent (Button, xy) {
-      let Control = EventConsumerAtPoint('onTouch', xy.x,xy.y);
-      if (Control != null) {
-        Control.onTouch(Control, Button, xy);
+      if (activeLayout == null) {
+        if (typeof DefaultHandler === 'function') {
+          DefaultHandler();
+        }
+      } else {
+        let Control = EventConsumerAtPoint('onTouch', xy.x,xy.y);
+        if (Control != null) {
+          Control.onTouch(Control, Button, xy);
+        }
       }
     }
     Bangle.on('touch',handleTouchEvent);
@@ -433,11 +439,17 @@ Some user interfaces may not expect user interaction - but most of them do. Unti
 
 /**** dispatchStrokeEvent ****/
 
-  function dispatchStrokeEvent () {
+  function dispatchStrokeEvent (DefaultHandler) {
     function handleStrokeEvent (Coordinates) {
-      let Control = EventConsumerAtPoint('onStroke', Coordinates.xy[0],Coordinates.xy[1]);
-      if (Control != null) {
-        Control.onStroke(Control, Coordinates);
+      if (activeLayout == null) {
+        if (typeof DefaultHandler === 'function') {
+          DefaultHandler();
+        }
+      } else {
+        let Control = EventConsumerAtPoint('onStroke', Coordinates.xy[0],Coordinates.xy[1]);
+        if (Control != null) {
+          Control.onStroke(Control, Coordinates);
+        }
       }
     }
     Bangle.on('stroke',handleStrokeEvent);
@@ -457,6 +469,8 @@ After executing the code from above, event handling becomes really easy:
 ```
 
 Several "screens" may be implemented by changing (and rerendering) `activeLayout` - events will always be dispatched to the currently active screen.
+
+If you don't have a layout (because you implemented a clock with additional configuration screens - and the clock itself does not use a layout), you may provide a "default handler" for `dispatchTouchEvent` or `dispatchStrokeEvent` which is invoked instead of a control-specific event handler.
 
 ### Label ###
 
@@ -609,8 +623,9 @@ At the request of user "HughB" from the [Espruino forum](http://forum.espruino.c
 
 These hands also include a stylish "bolt" in the center.
 
+A minimal clock with just these hands only (and no real clock face) can be found in the author's [personal app store](https://rozek.github.io/BangleApps/#clock).
+
 <br clear="left">
-&nbsp;<br>
 
 The referenced source code considers the currently configured "theme" (and may therefore look different than shown in the screenshot on your watch depending on which theme you prefer).
 
