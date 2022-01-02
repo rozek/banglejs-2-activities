@@ -16,8 +16,15 @@
 
       g.setClipRect(x,y, x + Width-1 + bold,y + Height-1 + bold);
 
+      if (Details.bgCol != null) {
+        g.setBgColor(Details.bgCol);
+        g.clearRect(x,y, x + Width-1 + bold,y + Height-1 + bold);
+      }
+
       x += halfWidth  + xAlignment*(halfWidth +Padding);
       y += halfHeight + yAlignment*(halfHeight+Padding);
+
+      if (Details.col != null) { g.setColor(Details.col); }
 
       g.drawString(Details.label, x,y);
       if (bold !== 0) {
