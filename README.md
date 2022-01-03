@@ -514,7 +514,7 @@ If `bold` is set to `true`, the given text is drawn four times - once at the ori
 
 ### Image ###
 
-The built-in "img" only allows an image to be scaled up or down - rotation is not taken into account. For that reason, a simple "Image" component has been written which also allows an image to be rotated.
+The built-in "img" component only allows an image to be scaled up or down - rotation is not taken into account. For that reason, a simple "Image" component has been written which also allows an image to be rotated.
 
 <img align="left" src="Layouting/ImageDemo.png">
 
