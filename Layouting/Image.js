@@ -18,6 +18,11 @@
       x += halfWidth  + xAlignment*(halfWidth  + Padding);
       y += halfHeight + yAlignment*(halfHeight + Padding);
 
+      if ('rotate' in Details) {               // "rotate" centers image at x,y!
+        x += Details.ImageWidth/2;
+        y += Details.ImageHeight/2
+      }
+
       g.drawImage(Image, x,y, Details.ImageOptions);
     }
 
