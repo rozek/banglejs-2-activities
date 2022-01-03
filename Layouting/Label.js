@@ -14,12 +14,12 @@
       if (Details.font != null) { g.setFont(Details.font); }
       g.setFontAlign(xAlignment,yAlignment);
 
-      g.setClipRect(x,y, x + Width-1 + bold,y + Height-1 + bold);
-
       if (Details.bgCol != null) {
         g.setBgColor(Details.bgCol);
         g.clearRect(x,y, x + Width-1 + bold,y + Height-1 + bold);
       }
+
+      g.setClipRect(x+Padding,y+Padding, x + Width-Padding-1,y + Height-Padding-1);
 
       x += halfWidth  + xAlignment*(halfWidth +Padding);
       y += halfHeight + yAlignment*(halfHeight+Padding);
