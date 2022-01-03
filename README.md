@@ -505,16 +505,18 @@ and the following arguments:
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `font`, `col`, `bgCol` etc.) with the following particularities:
 
-* `font` - specifies the font to be used for rendering the given `Text`. If not explicitly provided, the currently configured font is used (during layout definition and rendering)
-* `width` - specifies the requested minimal width of a label. If not explicitly provided, the width of the given `Text` is used (when rendered using the specified `font` or the currently configured one)
-* `height` - specifies the requested minimal height of a label. If not explicitly provided, the height of the given `Text` is used (when rendered using the specified `font` or the currently configured one)
+* `font` - optionally specifies the font to be used for rendering the given `Text`. If not explicitly given, that font is used which was configured when the factory function was invoked
+* `width` - optionally specifies the requested minimum width of a label. If not explicitly defined, the width of the given `Text` is used (when rendered using the configured font)
+* `height` - optionally specifies the requested minimum height of a label. If not explicitly defined, the height of the given `Text` is used (when rendered using the configured font)
 * `halign` - either `-1` to left-align the given `text`, 0 to center it horizontally, or `1` to right-align it. By default, the text is centered within its layout cell
 * `valign` - either `-1` to top-align the given `text`, 0 to center it vertically, or `1` to bottom-align it. By default, the text is centered within its layout cell
-* `bold` - is a boolean value which, when set to `true`, displays the given `Text` in bold
+* `col` - optionally specifies the color in which the given text is drawn. If not explicitly defined, that color is used which was configured as the current foreground color when the factory function was invoked
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual text is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
+* `bold` - when set to `true`, the given `Text` is shown in bold, otherwise it is drawn normally
 
 Any unknown option is simply passed through to the layout library without further processing.
 
-If `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
+Implementation note: if `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
 ### Image ###
 
