@@ -8,19 +8,19 @@
       let Height = Details.h, halfHeight = Height/2 - Details.ImageHeight/2;
       let Padding = Details.pad || 0;
 
-      g.setClipRect(x,y, x + Width-1,y + Height-1);
-
       if (Details.bgCol != null) {
         g.setBgColor(Details.bgCol);
         g.clearRect(x,y, x + Width-1,y + Height-1);
       }
+
+      g.setClipRect(x+Padding,y+Padding, x + Width-Padding-1,y + Height-Padding-1);
 
       x += halfWidth  + xAlignment*(halfWidth  + Padding);
       y += halfHeight + yAlignment*(halfHeight + Padding);
 
       if ('rotate' in Details) {               // "rotate" centers image at x,y!
         x += Details.ImageWidth/2;
-        y += Details.ImageHeight/2
+        y += Details.ImageHeight/2;
       }
 
       g.drawImage(Image, x,y, Details.ImageOptions);
