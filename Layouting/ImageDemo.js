@@ -25,6 +25,11 @@
       x += halfWidth  + xAlignment*(halfWidth  + Padding);
       y += halfHeight + yAlignment*(halfHeight + Padding);
 
+      if ('rotate' in Details) {               // "rotate" centers image at x,y!
+        x += Details.ImageWidth/2;
+        y += Details.ImageHeight/2
+      }
+
       g.drawImage(Image, x,y, Details.ImageOptions);
     }
 
@@ -60,19 +65,19 @@
   let Display = new Layout({
     type:'v', c:[
       { type:'h', c:[
-        Image(Icon,{ valign:-1, halign:-1, common:commonSettings }),
+        Image(Icon,{ valign:-1, halign:-1, common:commonSettings, scale:0.5 }),
         Image(Icon,{ valign:0,  halign:-1, common:commonSettings }),
         Image(Icon,{ valign:1,  halign:-1, common:commonSettings }),
       ] },
       { type:'h', c:[
         Image(Icon,{ valign:-1, halign:0, common:commonSettings }),
-        Image(Icon,{ valign:0,  halign:0, common:commonSettings }),
+        Image(Icon,{ valign:0,  halign:0, common:commonSettings, rotate:Math.PI/4 }),
         Image(Icon,{ valign:1,  halign:0, common:commonSettings }),
       ] },
       { type:'h', c:[
         Image(Icon,{ valign:-1, halign:1, common:commonSettings }),
         Image(Icon,{ valign:0,  halign:1, common:commonSettings }),
-        Image(Icon,{ valign:1,  halign:1, common:commonSettings }),
+        Image(Icon,{ valign:1,  halign:1, common:commonSettings, scale:1.5 }),
       ] },
     ]
   });
