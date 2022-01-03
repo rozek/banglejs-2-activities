@@ -49,6 +49,9 @@
         TextMetrics = g.stringMetrics(Result.label);
       }
 
+      if (Result.col   == null) { Result.col   = g.getColor(); }
+      if (Result.bgCol == null) { Result.bgCol = g.getBgColor(); }
+
       Result.width  = Result.width  || TextMetrics.width  + 2*(Result.pad || 0);
       Result.height = Result.height || TextMetrics.height + 2*(Result.pad || 0);
     return Result;
