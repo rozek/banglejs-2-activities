@@ -49,6 +49,7 @@ A click on one of the links shown below leads directly to the corresponding topi
    <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#additional-concepts">additional Concepts</a></td>
    <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#label">Label</a></td>
    <td align="center"><img src="Layouting/ImageDemo.png"><br><a href="#image">Image</a></td>
+   <td align="center"><img src="Layouting/DrawableDemo.png"><br><a href="#drawable">Drawable</a></td>
  </tr>
 </table>
 
@@ -545,6 +546,22 @@ and the following arguments:
 * `rotate` - allows the given `Image` to be rotated by the given angle (provided in radians)
 
 Any unknown option is simply passed through to the layout library.
+
+### Drawable ###
+
+The built-in "img" component only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated.
+
+<img align="left" src="Layouting/DrawableDemo.png">
+
+• [source code](Layouting/Drawable.js) for the "Drawable" component itself<br>&nbsp;<br>
+• [source code](Layouting/DrawableDemo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/DrawableDemo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/DrawableDemo.js)
+
+(the demonstrator also already uses the new "common settings" feature)
+
+<br clear="left">
+&nbsp;<br>
 
 ## Analog Clock Faces ##
 
