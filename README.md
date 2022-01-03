@@ -476,7 +476,7 @@ If you don't have a layout (because you implemented a clock with additional conf
 
 ### Label ###
 
-The built-in "txt" component does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which properly aligns text as specified.
+The built-in "txt" layout type does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which properly aligns text as specified.
 
 Additionally, the component also provides a `bold` option which may be set to `true` if the given text should be shown in bold. The following screenshot illustrates both features:
 
@@ -520,7 +520,7 @@ Implementation note: if `bold` is set to `true`, the given text is drawn four ti
 
 ### Image ###
 
-The built-in "img" component only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated - additionally, drawing takes place within a "clipping rectangle" which prevents an image to cross the borders of its own layout cell and overlap other cells.
+The built-in "img" layout type only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated - additionally, drawing takes place within a "clipping rectangle" which prevents an image to cross the borders of its own layout cell and overlap other cells.
 
 Last, but not least, the "Image" component also considers `halign` and `valign` settings and aligns an image properly.
 
@@ -561,7 +561,7 @@ Any unknown option is simply passed through to the layout library.
 
 ### Drawable ###
 
-The built-in "img" component only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated.
+`Drawable` is the enhanced counterpart of the built-in "custom" layout type. It also relies on a `Callback` function for the actual rendering, but supports proper alignment within a layout cell and restricts drawing to the inside of the provided layout cell.
 
 <img align="left" src="Layouting/DrawableDemo.png">
 
@@ -574,6 +574,29 @@ The built-in "img" component only allows an image to be scaled up or down - rota
 
 <br clear="left">
 &nbsp;<br>
+
+`Drawable` is actually a factory function with the following signature:
+
+```
+Drawable(Callback, Options)
+```
+
+and the following arguments:
+
+* `Callback` - contains the function which is automatically invoked whenever the "Drawable" should be rendered (see below for its signature)
+* `Options` - is an optional object containing named options (see below)
+
+`Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
+
+* `DrawableWidth` - optionally specifies the requested minimum width of the "Drawable" itself (not its layout cell!) If not explicitly defined, a minimum width of `10` pixels is assumed
+* `DrawableHeight` - optionally specifies the requested minimum height of the "Drawable" itself (not its layout cell!) If not explicitly defined, a minimum height of `10` pixels is assumed
+* `width` - optionally specifies the requested minimum width of a layout cell for the "Drawable". If not explicitly defined, the configured width of the "Drawable" itself is used
+* `height` - optionally specifies the requested minimum height of a layout cell for the "Drawable". If not explicitly defined, the configured height of the "Drawable" itself is used
+* `halign` - either -1 to left-align the given "Drawable", 0 to center it horizontally, or 1 to right-align it. By default, a "Drawable" is centered within its layout cell
+* `valign` - either -1 to top-align the given "Drawable", 0 to center it vertically, or 1 to bottom-align it. By default, a "Drawable" is centered within its layout cell
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Drawable" is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
+
+Any unknown option is simply passed through to the layout library.
 
 ## Analog Clock Faces ##
 
