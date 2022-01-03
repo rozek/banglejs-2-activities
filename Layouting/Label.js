@@ -41,7 +41,11 @@
     });
       let TextMetrics;
       if (! Result.width || ! Result.height) {
-        if (Result.font != null) { g.setFont(Result.font); }
+        if (Result.font == null) {
+          Result.font = g.getFont();
+        } else {
+          g.setFont(Result.font);
+        }
         TextMetrics = g.stringMetrics(Result.label);
       }
 
