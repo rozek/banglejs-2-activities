@@ -505,6 +505,9 @@ and the following arguments:
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `font`, `col`, `bgCol` etc.) with the following particularities:
 
+* `font` - specifies the font to be used for rendering the given `Text`. If not explicitly provided, the currently configured font is used (during layout definition and rendering)
+* `width` - specifies the requested minimal width of a label. If not explicitly provided, the width of the given `Text` is used (when rendered using the specified `font` or the currently configured one)
+* `height` - specifies the requested minimal height of a label. If not explicitly provided, the height of the given `Text` is used (when rendered using the specified `font` or the currently configured one)
 * `halign` - either `-1` to left-align the given `text`, 0 to center it horizontally, or `1` to right-align it
 * `valign` - either `-1` to top-align the given `text`, 0 to center it vertically, or `1` to bottom-align it
 * `bold` - is a boolean value which, when set to `true`, displays the given `Text` in bold
