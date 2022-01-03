@@ -500,7 +500,7 @@ Label(Text, Options)
 
 and the following arguments:
 
-* `Text` - contains the text to be shown
+* `Text` - specifies the text to be shown
 * `Options` - is an optional object containing named options (see below)
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `font`, `col`, `bgCol` etc.) with the following particularities:
@@ -544,7 +544,7 @@ Image(Image, Options)
 
 and the following arguments:
 
-* `Image` - contains the image to be shown (in any format supported by `g.imageMetrics` and `g.drawImage`)
+* `Image` - specifies the image to be shown (in any format supported by `g.imageMetrics` and `g.drawImage`)
 * `Options` - is an optional object containing named options (see below)
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
@@ -583,7 +583,7 @@ Drawable(Callback, Options)
 
 and the following arguments:
 
-* `Callback` - contains the function which is automatically invoked whenever the "Drawable" should be rendered (see below for its signature)
+* `Callback` - specifies the function which is automatically invoked whenever the "Drawable" should be rendered (see below for its signature)
 * `Options` - is an optional object containing named options (see below)
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
