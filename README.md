@@ -48,6 +48,7 @@ A click on one of the links shown below leads directly to the corresponding topi
  <tr valign="top">
    <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#additional-concepts">additional Concepts</a></td>
    <td align="center"><img src="Layouting/LabelDemo.png"><br><a href="#label">Label</a></td>
+   <td align="center"><img src="Layouting/ImageDemo.png"><br><a href="#image">Image</a></td>
  </tr>
 </table>
 
@@ -510,6 +511,40 @@ and the following arguments:
 Any unknown option is simply passed through to the layout library.
 
 If `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
+
+### Image ###
+
+The built-in "img" only allows an image to be scaled up or down - rotation is not taken into account. For that reason, a simple "Image" component has been written which also allows an image to be rotated.
+
+<img align="left" src="Layouting/ImageDemo.png">
+
+• [source code](Layouting/Image.js) for the image component itself<br>&nbsp;<br>
+• [source code](Layouting/ImageDemo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/ImageDemo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/ImageDemo.js)
+
+(the demonstrator also already uses the new "common settings" feature)
+
+<br clear="left">
+&nbsp;<br>
+
+`Image` is actually a factory function with the following signature:
+
+```
+Image(Image, Options)
+```
+
+and the following arguments:
+
+* `Image` - contains the image to be shown (in any format supported by `g.imageMetrics` and `g.drawImage`)
+* `Options` - is an optional object containing named options (see below)
+
+`Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
+
+* `scale` - allows the given `Image` to be scaled up or down
+* `rotate` - allows the given `Image` to be rotated by the given angle (provided in radians)
+
+Any unknown option is simply passed through to the layout library.
 
 ## Analog Clock Faces ##
 
