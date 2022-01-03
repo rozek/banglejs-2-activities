@@ -482,7 +482,7 @@ Additionally, the component also provides a `bold` option which may be set to `t
 
 <img align="left" src="Layouting/LabelDemo.png">
 
-• [source code](Layouting/Label.js) for the label component itself<br>&nbsp;<br>
+• [source code](Layouting/Label.js) for the "Label" component itself<br>&nbsp;<br>
 • [source code](Layouting/LabelDemo.js) for the demonstrator<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/LabelDemo.js)
@@ -505,11 +505,11 @@ and the following arguments:
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `font`, `col`, `bgCol` etc.) with the following particularities:
 
-* `halign` - is taken into account when drawing the given `Text`
-* `valign` - is taken into account when drawing the given `Text`
+* `halign` - either `-1` to left-align the given `text`, 0 to center it horizontally, or `1` to right-align it
+* `valign` - either `-1` to top-align the given `text`, 0 to center it vertically, or `1` to bottom-align it
 * `bold` - is a boolean value which, when set to `true`, displays the given `Text` in bold
 
-Any unknown option is simply passed through to the layout library.
+Any unknown option is simply passed through to the layout library without further processing.
 
 If `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
