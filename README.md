@@ -515,11 +515,13 @@ If `bold` is set to `true`, the given text is drawn four times - once at the ori
 
 ### Image ###
 
-The built-in "img" component only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated.
+The built-in "img" component only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated - additionally, drawing takes place within a "clipping rectangle" which prevents an image to cross the borders of its own layout cell and overlap other cells.
+
+Last, but not least, the "Image" component also considers `halign` and `valign` settings and aligns an image properly.
 
 <img align="left" src="Layouting/ImageDemo.png">
 
-• [source code](Layouting/Image.js) for the image component itself<br>&nbsp;<br>
+• [source code](Layouting/Image.js) for the "Image" component itself<br>&nbsp;<br>
 • [source code](Layouting/ImageDemo.js) for the demonstrator<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/ImageDemo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/ImageDemo.js)
