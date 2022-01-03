@@ -505,11 +505,11 @@ and the following arguments:
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `font`, `col`, `bgCol` etc.) with the following particularities:
 
-* `font` - optionally specifies the font to be used for rendering the given `Text`. If not explicitly given, `Label` uses the font which was configured when the factory function was invoked
-* `width` - optionally specifies the requested minimum width of a label. If not explicitly defined, the width of the given `Text` is used (when rendered using the configured font)
-* `height` - optionally specifies the requested minimum height of a label. If not explicitly defined, the height of the given `Text` is used (when rendered using the configured font)
-* `halign` - either `-1` to left-align the given `text`, 0 to center it horizontally, or `1` to right-align it. By default, the text is centered within its layout cell
-* `valign` - either `-1` to top-align the given `text`, 0 to center it vertically, or `1` to bottom-align it. By default, the text is centered within its layout cell
+* `font` - optionally specifies the font to be used for rendering the given text. If not explicitly given, `Label` uses the font which was configured when the factory function was invoked
+* `width` - optionally specifies the requested minimum width of a label. If not explicitly defined, the width of the given text is used (when rendered using the configured font)
+* `height` - optionally specifies the requested minimum height of a label. If not explicitly defined, the height of the given text is used (when rendered using the configured font)
+* `halign` - either `-1` to left-align the given text, 0 to center it horizontally, or `1` to right-align it. By default, a text is centered within its layout cell
+* `valign` - either `-1` to top-align the given text, 0 to center it vertically, or `1` to bottom-align it. By default, a text is centered within its layout cell
 * `col` - optionally specifies the color in which the given text is drawn. If not explicitly defined, `Label` uses the color which was configured as the current foreground color when the factory function was invoked
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual text is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 * `bold` - when set to `true`, the given `Text` is shown in bold, otherwise it is drawn normally
@@ -549,8 +549,13 @@ and the following arguments:
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
 
-* `scale` - allows the given `Image` to be scaled up or down
-* `rotate` - allows the given `Image` to be rotated by the given angle (provided in radians)
+* `width` - optionally specifies the requested minimum width of an `Image`. If not explicitly defined, the width of the given image is used - after applying the configured `scale`, but without considering any configured rotation
+* `height` - optionally specifies the requested minimum height of an `Image`. If not explicitly defined, the height of the given image is used - after applying the configured `scale`, but without considering any configured rotation
+* `halign` - either -1 to left-align the given image, 0 to center it horizontally, or 1 to right-align it. By default, an image is centered within its layout cell
+* `valign` - either -1 to top-align the given image, 0 to center it vertically, or 1 to bottom-align it. By default, an image is centered within its layout cell
+* `scale` - optionally specifies the factor, by which the given `Image` should be scaled before being drawn. If not explicitly defined, a scale factor of `1` is assumed
+* `rotate` - optionally specifies an agle (in radians) by which the given `Image` should be rotated before being drawn. If not explicitly defined, a rotation angle of `0` is assumed
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual image is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 
 Any unknown option is simply passed through to the layout library.
 
