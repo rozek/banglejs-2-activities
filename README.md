@@ -598,18 +598,6 @@ and the following arguments:
 
 Any unknown option is simply passed through to the layout library.
 
-### Frameable ###
-
-`Frameable` components draw an optional border around a given "inner" component. The required size of a "Frameable" is independent of whether the border is shown or not - allowing them to be used as selection indicators for texts, images, and other components
-
-
-
-### Hilitable ###
-
-`Hilitable` components draw a background for a given "inner" component (which should not define their own background color, though). This allows them to be used as selection indicators for texts, images, and other components
-
-
-
 ## Analog Clock Faces ##
 
 At the time of this writing, there are many clock faces for the Bangle.js 2 - even analog ones - but very few (one?) that also display numbers. The following examples have been written to fill this gap.
