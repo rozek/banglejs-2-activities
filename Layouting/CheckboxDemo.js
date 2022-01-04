@@ -190,6 +190,10 @@
 
       Control.checked = ! Control.checked;
       renderCheckbox(Control);
+
+      if (typeof Control.onChange === 'function') {
+        Control.onChange(Control);
+      }
     }
 
     let Result = Object.assign((
@@ -209,15 +213,22 @@
 
   let commonSettings = { font:'12x20', width:100, pad:4 };
 
+  function logChange (Control) {
+    print(
+      'checkbox "' + Control.id + '" was ' +
+      (Control.checked ? 'checked' : 'unchecked')
+    );
+  }
+
   let Layout = require('Layout');
   activeLayout = new Layout({
     type:'v', c:[
       { type:'h', c:[
-        Checkbox({ id:'first' }),
+        Checkbox({ id:'first',  onChange:logChange }),
         Label('first',{ valign:0,  halign:-1, common:commonSettings }),
       ] },
       { type:'h', c:[
-        Checkbox({ id:'second', checked:true }),
+        Checkbox({ id:'second', onChange:logChange, checked:true }),
         Label('second',{ valign:0,  halign:-1, common:commonSettings }),
       ] },
     ]
