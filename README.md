@@ -476,9 +476,14 @@ If you don't have a layout (because you implemented a clock with additional conf
 
 ### Label ###
 
-The built-in "txt" layout type does not take any `halign` and `valign` settings into account. For that reason, a simple "Label" component has been written which properly aligns text as specified.
+The "Label" component is an enhanced counterpart of the built-in "txt" layout type - with the following additional features:
 
-Additionally, the component also provides a `bold` option which may be set to `true` if the given text should be shown in bold. The following screenshot illustrates both features:
+* labels may be horizontally and/or vertically aligned within their layout cell
+* "Label" components may be bordered and that border may be drawn in a given color or remain "transparent". Since the layout of a component with a "transparent" border is the same as with an opaque one, borders may be used as selection indicators
+* "Label" components may be "highlighted" (e.g., to indicate a selection)
+* drawing is restricted to the computed layout cell (less any padding and bordering)
+
+The following screenshot illustrates many of these features:
 
 <img align="left" src="Layouting/LabelDemo.png">
 
@@ -508,8 +513,11 @@ and the following arguments:
 * `font` - optionally specifies the font to be used for rendering the given text. If not explicitly given, `Label` uses the font which was configured when the factory function was invoked
 * `width` - optionally specifies the requested minimum width of a label. If not explicitly defined, the width of the given text is used (when rendered using the configured font)
 * `height` - optionally specifies the requested minimum height of a label. If not explicitly defined, the height of the given text is used (when rendered using the configured font)
+* `border` - is an optional integer ≧ 0 which indicates whether a border should be drawn at the outer edges of (but still within) the layout cell and, if so, how thick that border should be. The color of that border may be specified by means of `BorderColor` - otherwise, the current foreground color will be used. If `border` is 0, no border will be drawn
+* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given `border` value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn
 * `halign` - either `-1` to left-align the given text, 0 to center it horizontally, or `1` to right-align it. By default, a text is centered within its layout cell
 * `valign` - either `-1` to top-align the given text, 0 to center it vertically, or `1` to bottom-align it. By default, a text is centered within its layout cell
+* `hilite` - optionally specifies whether the component should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used to draw background and text
 * `col` - optionally specifies the color in which the given text is drawn. If not explicitly defined, `Label` uses the color which was configured as the current foreground color when the factory function was invoked
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual text is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 * `bold` - when set to `true`, the given `Text` is shown in bold, otherwise it is drawn normally
@@ -527,6 +535,8 @@ The "Image" component is an enhanced counterpart of the built-in "img" layout ty
 * "Image" components may be bordered and that border may be drawn in a given color or remain "transparent". Since the layout of a component with a "transparent" border is the same as with an opaque one, borders may be used as selection indicators
 * "Image" components may be "highlighted" (e.g., to indicate a selection)
 * drawing is restricted to the computed layout cell (less any padding and bordering)
+
+The following screenshot illustrates many of these features:
 
 <img align="left" src="Layouting/ImageDemo.png">
 
