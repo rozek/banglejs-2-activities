@@ -46,7 +46,7 @@
       x += halfWidth  + xAlignment*(halfWidth  - Border - Padding);
       y += halfHeight + yAlignment*(halfHeight - Border - Padding);
 
-      g.setColor(Details.col || g.theme.fg);
+      g.setColor(Hilite ? g.theme.fgH : Details.col || g.theme.fg);
 
       if (Details.font != null) { g.setFont(Details.font); }
       g.setFontAlign(xAlignment,yAlignment);
