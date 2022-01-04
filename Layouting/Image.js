@@ -45,7 +45,8 @@
         y += Details.ImageHeight/2;
       }
 
-      g.setColor(Hilite ? g.theme.fgH : Details.col || g.theme.fg);
+      g.setColor  (Hilite ? g.theme.fgH : Details.col   || g.theme.fg);
+      g.setBgColor(Hilite ? g.theme.bgH : Details.bgCol || g.theme.bg);
 
       g.drawImage(Image, x,y, Details.ImageOptions);
     }
