@@ -522,7 +522,7 @@ and the following arguments:
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual text is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 * `bold` - when set to `true`, the given `Text` is shown in bold, otherwise it is drawn normally
 
-Any unknown option is simply passed through to the layout library without further processing.
+Any other option is simply passed through to the layout library without further processing.
 
 Implementation note: if `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
@@ -575,7 +575,7 @@ and the following arguments:
 * `col` - optionally specifies the color in which the given image is drawn. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual image is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 
-Any unknown option is simply passed through to the layout library.
+Any other option is simply passed through to the layout library.
 
 ### Drawable ###
 
@@ -625,7 +625,7 @@ and the following arguments:
 * `col` - optionally specifies the foreground color for the drawing. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Drawable" is drawn. If not explicitly defined, the layout cell will not be filled with any color
 
-Any unknown option is simply passed through to the layout library.
+Any other option is simply passed through to the layout library.
 
 ## Analog Clock Faces ##
 
