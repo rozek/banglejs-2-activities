@@ -630,6 +630,51 @@ and the following arguments:
 
 Any other option is simply passed through to the layout library.
 
+### Button ###
+
+The "Button" component is the enhanced counterpart of the built-in "btn" layout type - with the following additional features:
+
+* basically, "Button" components are just text labels (drawn in bold) with a rounded rectangle border
+* "Button" components may be "highlighted" (e.g., to emphasize a preferred button)
+* label drawing is restricted to the computed layout cell (less any padding and the border)
+
+The following screenshot illustrates many of these features:
+
+<img align="left" src="Layouting/ButtonDemo.png">
+
+• [source code](Layouting/Button.js) for the "Button" component itself<br>&nbsp;<br>
+• [source code](Layouting/ButtonDemo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/ButtonDemo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/ButtonDemo.js)
+
+(the demonstrator also already uses the new "common settings" feature)
+
+<br clear="left">
+&nbsp;<br>
+
+`Button` is actually a factory function with the following signature:
+
+```
+Button(Text, Options)
+```
+
+and the following arguments:
+
+* `Text` - specifies the text to be shown
+* `Options` - is an optional object containing named options (see below)
+
+`Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
+
+* `width` - optionally specifies the requested minimum width of a layout cell for the "Button". If not explicitly defined, the width of the given text (when rendered using the configured font) plus some room for the border is used
+* `height` - optionally specifies the requested minimum height of a layout cell for the "Button". If not explicitly defined, the height of the given text (when rendered using the configured font) plus some room for the border is used
+* `hilite` - optionally specifies whether the inside of the button should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used for background, border and label
+* `col` - optionally specifies the foreground color for label and border of the button. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Drawable" is drawn. If not explicitly defined, the layout cell will not be filled with any color
+
+Any other option is simply passed through to the layout library.
+
+> Note: in order to react on button presses, just pass an event handler as `onTouch` option.
+
 ## Analog Clock Faces ##
 
 At the time of this writing, there are many clock faces for the Bangle.js 2 - even analog ones - but very few (one?) that also display numbers. The following examples have been written to fill this gap.
