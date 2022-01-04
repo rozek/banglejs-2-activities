@@ -94,6 +94,9 @@
       g.setFontAlign(0,0);
 
       g.drawRoundedRect(x+Padding,y+Padding, x+Width-Padding-1,y+Height-Padding-1,8);
+
+      g.setClipRect(x+Padding,y+Padding, x+Width-Padding-1,y+Height-Padding-1);
+
       g.drawString(Details.label, x+halfWidth,y+halfHeight);
       g.drawString(Details.label, x+halfWidth+1,y+halfHeight);
       g.drawString(Details.label, x+halfWidth,y+halfHeight+1);
