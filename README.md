@@ -520,9 +520,13 @@ Implementation note: if `bold` is set to `true`, the given text is drawn four ti
 
 ### Image ###
 
-The built-in "img" layout type only allows an image to be scaled up or down - rotation is not supported. For that reason, a simple "Image" component has been written which also allows an image to be rotated - additionally, drawing takes place within a "clipping rectangle" which prevents an image to cross the borders of its own layout cell and overlap other cells.
+The "Image" component is an enhanced counterpart of the built-in "img" layout type - with the following additional features:
 
-Last, but not least, the "Image" component also considers `halign` and `valign` settings and aligns an image properly.
+* images may be *rotated* (the "img" layout type supports scaling only)
+* images may be horizontally and/or vertically aligned within their layout cell
+* "Image" components may be bordered and that border may be drawn in a given color or remain "transparent". Since the layout of a component with a "transparent" border is the same as with an opaque one, borders may be used as selection indicators
+* "Image" components may be "hilited" (e.g., to indicate a selection)
+* drawing is restricted to the computed layout cell (less any padding and bordering)
 
 <img align="left" src="Layouting/ImageDemo.png">
 
@@ -551,10 +555,13 @@ and the following arguments:
 
 * `width` - optionally specifies the requested minimum width of an `Image`. If not explicitly defined, the width of the given image is used - after applying the configured `scale`, but without considering any configured rotation
 * `height` - optionally specifies the requested minimum height of an `Image`. If not explicitly defined, the height of the given image is used - after applying the configured `scale`, but without considering any configured rotation
+* `border` - is an optional integer ≧ 0 which indicates whether a border should be drawn at the outer edges of (but still within) the layout cell and, if so, how thick that border should be. The color of that border may be specified by means `BorderColor` - otherwise, the current foreground color will be used. If `border` is 0, no border will be drawn
+* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given `border` value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn
 * `halign` - either -1 to left-align the given image, 0 to center it horizontally, or 1 to right-align it. By default, an image is centered within its layout cell
 * `valign` - either -1 to top-align the given image, 0 to center it vertically, or 1 to bottom-align it. By default, an image is centered within its layout cell
 * `scale` - optionally specifies the factor, by which the given `Image` should be scaled before being drawn. If not explicitly defined, a scale factor of `1` is assumed
 * `rotate` - optionally specifies an agle (in radians) by which the given `Image` should be rotated before being drawn. If not explicitly defined, a rotation angle of `0` is assumed
+* `hilite` - optionally specifies whether the component should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used to draw background and image
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual image is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 
 Any unknown option is simply passed through to the layout library.
