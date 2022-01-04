@@ -130,7 +130,7 @@
   }
 
   /* private */ function uncheckRadiobuttonsIn (Control,GroupName) {
-    if (Control == null) { return; }
+    if ((Control == null) || (GroupName == null)) { return; }
 
     if (Control.c == null) {
       if (('checked' in Control) && (Control.GroupName === GroupName)) {
