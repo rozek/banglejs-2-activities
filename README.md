@@ -51,6 +51,9 @@ A click on one of the links shown below leads directly to the corresponding topi
    <td align="center"><img src="Layouting/ImageDemo.png"><br><a href="#image">Image</a></td>
    <td align="center"><img src="Layouting/DrawableDemo.png"><br><a href="#drawable">Drawable</a></td>
  </tr>
+ <tr valign="top">
+   <td align="center"><img src="Layouting/ButtonDemo.png"><br><a href="#button">Button</a></td>
+ </tr>
 </table>
 
 ### Analog Clock Faces ###
