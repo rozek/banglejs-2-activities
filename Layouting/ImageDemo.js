@@ -11,19 +11,45 @@
     function renderImage (Details) {
       let x = Details.x, xAlignment = Details.halign || 0;
       let y = Details.y, yAlignment = Details.valign || 0;
+
       let Width  = Details.w, halfWidth  = Width/2  - Details.ImageWidth/2;
       let Height = Details.h, halfHeight = Height/2 - Details.ImageHeight/2;
-      let Padding = Details.pad || 0;
 
-      if (Details.bgCol != null) {
-        g.setBgColor(Details.bgCol);
-        g.clearRect(x,y, x + Width-1,y + Height-1);
+      let Border  = Details.border || 0, BorderColor = Details.BorderColor;
+      let Padding = Details.pad    || 0;
+      let Hilite  = Details.hilite || false;
+
+      if (Hilite || (Details.bgCol != null)) {
+        let currentBgColor = g.getBgColor();
+          g.setBgColor(Hilite ? g.theme.bgH : Details.bgCol);
+          g.clearRect(x,y, x + Width-1,y + Height-1);
+        g.setBgColor(currentBgColor);
       }
 
-      g.setClipRect(x+Padding,y+Padding, x + Width-Padding-1,y + Height-Padding-1);
+      if ((Border > 0) && (BorderColor !== null)) {// draw border of layout cell
+        let currentColor = g.getColor();
+          g.setColor(BorderColor || Details.col || g.theme.fg);
 
-      x += halfWidth  + xAlignment*(halfWidth  + Padding);
-      y += halfHeight + yAlignment*(halfHeight + Padding);
+          switch (Border) {
+            case 2:  g.drawRect(x+1,y+1, x+Width-2,y+Height-2);// no break here!
+            case 1:  g.drawRect(x,y,     x+Width-1,y+Height-1); break;
+            default: g.fillPoly([
+              x,y, x+Width,y, x+Width,y+Height, x,y+Height, x,y,
+              x+Border,y+Border, x+Border,y+Height-Border,
+                x+Width-Border,y+Height-Border, x+Width-Border,y+Border,
+                x+Border,y+Border
+            ]);
+          }
+        g.setColor(currentColor);
+      }
+
+      g.setClipRect(
+        x+Border+Padding,y+Border+Padding,
+        x + Width-Border-Padding-1,y + Height-Border-Padding-1
+      );
+
+      x += halfWidth  + xAlignment*(halfWidth  - Border - Padding);
+      y += halfHeight + yAlignment*(halfHeight - Border - Padding);
 
       if ('rotate' in Details) {               // "rotate" centers image at x,y!
         x += Details.ImageWidth/2;
@@ -39,7 +65,9 @@
       type:'custom', render:renderImage, Image:Image
     });
       let ImageMetrics = g.imageMetrics(Image);
-      let Scale        = Result.scale || 1;
+      let Scale        = Result.scale  || 1;
+      let Border       = Result.border || 0;
+      let Padding      = Result.pad    || 0;
 
       Result.ImageWidth  = Scale * ImageMetrics.width;
       Result.ImageHeight = Scale * ImageMetrics.height;
@@ -51,8 +79,8 @@
         if ('frame'  in Result) { Result.ImageOptions.frame  = Result.frame; }
       }
 
-      Result.width  = Result.width  || Result.ImageWidth  + 2*(Result.pad || 0);
-      Result.height = Result.height || Result.ImageHeight + 2*(Result.pad || 0);
+      Result.width  = Result.width  || Result.ImageWidth  + 2*Border + 2*Padding;
+      Result.height = Result.height || Result.ImageHeight + 2*Border + 2*Padding;
     return Result;
   }
 
@@ -65,17 +93,17 @@
       { type:'h', c:[
         Image(Icon,{ valign:-1, halign:-1, common:commonSettings, scale:0.5 }),
         Image(Icon,{ valign:0,  halign:-1, common:commonSettings }),
-        Image(Icon,{ valign:1,  halign:-1, common:commonSettings }),
+        Image(Icon,{ valign:1,  halign:-1, common:commonSettings, border:1, BorderColor:'#FFFF00' }),
       ] },
       { type:'h', c:[
-        Image(Icon,{ valign:-1, halign:0, common:commonSettings }),
+        Image(Icon,{ valign:-1, halign:0, common:commonSettings, hilite:true }),
         Image(Icon,{ valign:0,  halign:0, common:commonSettings, rotate:Math.PI/4, bgCol:'#00FF00' }),
         Image(Icon,{ valign:1,  halign:0, common:commonSettings }),
       ] },
       { type:'h', c:[
-        Image(Icon,{ valign:-1, halign:1, common:commonSettings }),
+        Image(Icon,{ valign:-1, halign:1, common:commonSettings, border:3, BorderColor:'#FFFF00' }),
         Image(Icon,{ valign:0,  halign:1, common:commonSettings }),
-        Image(Icon,{ valign:1,  halign:1, common:commonSettings, scale:1.5 }),
+        Image(Icon,{ valign:1,  halign:1, common:commonSettings, scale:1.5, border:3, BorderColor:null }),
       ] },
     ]
   });
