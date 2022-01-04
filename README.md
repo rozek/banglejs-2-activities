@@ -718,7 +718,7 @@ Any other option is simply passed through to the layout library.
 
 ### Radiobutton ###
 
-The "Radiobutton" component represents a small "radio button" that (normally) belongs to a "radio button group" in which at most one button may  be in a checked state while all others are unchecked (as illustrated by the following screenshot):
+The "Radiobutton" component represents a small "radio button" that (normally) belongs to a "radio button group" in which at most one button may be checked while all others are unchecked (as illustrated by the following screenshot):
 
 <img align="left" src="Layouting/RadiobuttonDemo.png">
 
