@@ -514,15 +514,15 @@ and the following arguments:
 * `width` - optionally specifies the requested minimum width of a label. If not explicitly defined, the width of the given text is used (when rendered using the configured font)
 * `height` - optionally specifies the requested minimum height of a label. If not explicitly defined, the height of the given text is used (when rendered using the configured font)
 * `border` - is an optional integer ≧ 0 which indicates whether a border should be drawn at the outer edges of (but still within) the layout cell and, if so, how thick that border should be. The color of that border may be specified by means of `BorderColor` - otherwise, the current foreground color will be used. If `border` is 0, no border will be drawn
-* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given `border` value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn
+* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given `border` value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn. If not explicitly defined, the `fg` color of the current theme at the time of drawing is also used for the border
 * `halign` - either `-1` to left-align the given text, 0 to center it horizontally, or `1` to right-align it. By default, a text is centered within its layout cell
 * `valign` - either `-1` to top-align the given text, 0 to center it vertically, or `1` to bottom-align it. By default, a text is centered within its layout cell
 * `hilite` - optionally specifies whether the component should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used to draw background and text
-* `col` - optionally specifies the color in which the given text is drawn. If not explicitly defined, `Label` uses the color which was configured as the current foreground color when the factory function was invoked
+* `col` - optionally specifies the color in which the given text is drawn. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual text is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 * `bold` - when set to `true`, the given `Text` is shown in bold, otherwise it is drawn normally
 
-Any unknown option is simply passed through to the layout library without further processing.
+Any other option is simply passed through to the layout library without further processing.
 
 Implementation note: if `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
@@ -566,20 +566,27 @@ and the following arguments:
 * `width` - optionally specifies the requested minimum width of an `Image`. If not explicitly defined, the width of the given image is used - after applying the configured `scale`, but without considering any configured rotation
 * `height` - optionally specifies the requested minimum height of an `Image`. If not explicitly defined, the height of the given image is used - after applying the configured `scale`, but without considering any configured rotation
 * `border` - is an optional integer ≧ 0 which indicates whether a border should be drawn at the outer edges of (but still within) the layout cell and, if so, how thick that border should be. The color of that border may be specified by means of `BorderColor` - otherwise, the current foreground color will be used. If `border` is 0, no border will be drawn
-* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given `border` value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn
+* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given `border` value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn. If not explicitly defined, the `fg` color of the current theme at the time of drawing is also used for the border
 * `halign` - either -1 to left-align the given image, 0 to center it horizontally, or 1 to right-align it. By default, an image is centered within its layout cell
 * `valign` - either -1 to top-align the given image, 0 to center it vertically, or 1 to bottom-align it. By default, an image is centered within its layout cell
 * `scale` - optionally specifies the factor, by which the given `Image` should be scaled before being drawn. If not explicitly defined, a scale factor of `1` is assumed
 * `rotate` - optionally specifies an agle (in radians) by which the given `Image` should be rotated before being drawn. If not explicitly defined, a rotation angle of `0` is assumed
 * `hilite` - optionally specifies whether the component should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used to draw background and image
-* `col` - optionally specifies the color in which the given image is drawn. If not explicitly defined, `Image` uses the color which was configured as the current foreground color when the factory function was invoked
+* `col` - optionally specifies the color in which the given image is drawn. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual image is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 
-Any unknown option is simply passed through to the layout library.
+Any other option is simply passed through to the layout library.
 
 ### Drawable ###
 
-`Drawable` is the enhanced counterpart of the built-in "custom" layout type. It also relies on a `Callback` function for the actual rendering, but supports proper alignment within a layout cell and restricts drawing to the inside of the provided layout cell.
+The "Drawable" component is the enhanced counterpart of the built-in "custom" layout type - with the following additional features:
+
+* drawings may be horizontally and/or vertically aligned within their layout cell
+* "Drawable" components may be bordered and that border may be drawn in a given color or remain "transparent". Since the layout of a component with a "transparent" border is the same as with an opaque one, borders may be used as selection indicators
+* "Drawable" components may be "highlighted" (e.g., to indicate a selection)
+* drawing is restricted to the computed layout cell (less any padding and bordering)
+
+The following screenshot illustrates many of these features:
 
 <img align="left" src="Layouting/DrawableDemo.png">
 
@@ -601,7 +608,7 @@ Drawable(Callback, Options)
 
 and the following arguments:
 
-* `Callback` - specifies the function which is automatically invoked whenever the "Drawable" should be rendered (see below for its signature)
+* `Callback` - specifies the function which is automatically invoked whenever the "Drawable" should be rendered (see below for its signature) and is responsible for the actual drawing
 * `Options` - is an optional object containing named options (see below)
 
 `Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
@@ -610,11 +617,15 @@ and the following arguments:
 * `DrawableHeight` - optionally specifies the requested minimum height of the "Drawable" itself (not its layout cell!) If not explicitly defined, a minimum height of `10` pixels is assumed
 * `width` - optionally specifies the requested minimum width of a layout cell for the "Drawable". If not explicitly defined, the configured width of the "Drawable" itself is used
 * `height` - optionally specifies the requested minimum height of a layout cell for the "Drawable". If not explicitly defined, the configured height of the "Drawable" itself is used
+* `border` - is an optional integer ≧ 0 which indicates whether a border should be drawn at the outer edges of (but still within) the layout cell and, if so, how thick that border should be. The color of that border may be specified by means of `BorderColor` - otherwise, the current foreground color will be used. If `border` is 0, no border will be drawn
+* `BorderColor` - optionally specifies the color, in which a border should be drawn (provided, that the given border value is greater than zero). If `BorderColor` is set to `null`, space for a border will be provided, but no actual border drawn. If not explicitly defined, the `fg` color of the current theme at the time of drawing is also used for the border
 * `halign` - either -1 to left-align the given "Drawable", 0 to center it horizontally, or 1 to right-align it. By default, a "Drawable" is centered within its layout cell
 * `valign` - either -1 to top-align the given "Drawable", 0 to center it vertically, or 1 to bottom-align it. By default, a "Drawable" is centered within its layout cell
-* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Drawable" is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
+* `hilite` - optionally specifies whether the component should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used for background and drawing
+* `col` - optionally specifies the foreground color for the drawing. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Drawable" is drawn. If not explicitly defined, the layout cell will not be filled with any color
 
-Any unknown option is simply passed through to the layout library.
+Any other option is simply passed through to the layout library.
 
 ## Analog Clock Faces ##
 
