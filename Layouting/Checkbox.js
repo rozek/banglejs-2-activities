@@ -97,17 +97,6 @@
       );
     }
 
-    function toggleCheckbox (Control) {
-      g.reset();
-
-      Control.checked = ! Control.checked;
-      renderCheckbox(Control);
-
-      if (typeof Control.onChange === 'function') {
-        Control.onChange(Control);
-      }
-    }
-
     let Result = Object.assign((
       Options == null ? {} : Object.assign({}, Options.common || {}, Options)
     ), {
@@ -117,5 +106,35 @@
 
       Result.width  = Result.width  || 20 + 2*Padding;
       Result.height = Result.height || 20 + 2*Padding;
+
+      if (Result.checked == null) { Result.checked = false; }
     return Result;
+  }
+
+  /* private */ function toggleCheckbox (Control) {
+    g.reset();
+
+    Control.checked = ! Control.checked;
+    Control.render(Control);
+
+    if (typeof Control.onChange === 'function') {
+      Control.onChange(Control);
+    }
+  }
+
+/**** toggleInnerCheckbox ****/
+
+  /* export */ function toggleInnerCheckbox (Control) {
+    if (Control.c == null) {
+      if (('checked' in Control) && ! ('GroupName' in Control)) {
+        toggleCheckbox(Control);
+        return true;
+      }
+    } else {
+      let ControlList = Control.c;
+      for (let i = 0, l = ControlList.length; i < l; i++) {
+        let done = toggleInnerCheckbox(ControlList[i]);
+        if (done) { return true; }
+      }
+    }
   }
