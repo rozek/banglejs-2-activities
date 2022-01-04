@@ -713,6 +713,8 @@ and the following argument:
 
 Any other option is simply passed through to the layout library.
 
+> Tip: if you want to increase the touch area for a given checkbox and combine it with a textual or graphical label, simply pack both into a horizontal or vertical layout and add the following option to that layout: `onTouch:toggleInnerCheckbox`. From then on, touching anywhere within the layout area will toggle the contained checkbox. Note: do not pack multiple checkboxes into the same layout component with such a handler!
+
 ## Analog Clock Faces ##
 
 At the time of this writing, there are many clock faces for the Bangle.js 2 - even analog ones - but very few (one?) that also display numbers. The following examples have been written to fill this gap.
