@@ -670,11 +670,49 @@ and the following arguments:
 * `height` - optionally specifies the requested minimum height of a layout cell for the "Button". If not explicitly defined, the height of the given text (when rendered using the configured font) plus some room for the border is used
 * `hilite` - optionally specifies whether the inside of the button should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used for background, border and label
 * `col` - optionally specifies the foreground color for label and border of the button. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
-* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Drawable" is drawn. If not explicitly defined, the layout cell will not be filled with any color
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Button" is drawn. If not explicitly defined, the layout cell will not be filled with any color
 
 Any other option is simply passed through to the layout library.
 
 > Note: in order to react on button presses, just pass an event handler as `onTouch` option.
+
+### Checkbox ###
+
+The "Checkbox" component represents a small checkbox which may either be in a checked or an unchecked state (as illustrated by the following screenshot):
+
+<img align="left" src="Layouting/CheckboxDemo.png">
+
+• [source code](Layouting/Checkbox.js) for the "Button" component itself<br>&nbsp;<br>
+• [source code](Layouting/CheckboxDemo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/CheckboxDemo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/CheckboxDemo.js)
+
+(the demonstrator also already uses the new "common settings" feature)
+
+<br clear="left">
+&nbsp;<br>
+
+`Checkbox` is actually a factory function with the following signature:
+
+```
+Checkbox(Options)
+```
+
+and the following argument:
+
+* `Options` - is an optional object containing named options (see below)
+
+`Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
+
+* `width` - optionally specifies the requested minimum width of a layout cell for the "Checkbox". If not explicitly defined, a width of 20 pixels is assumed
+* `height` - optionally specifies the requested minimum height of a layout cell for the "Checkbox". If not explicitly defined, a height of 20 pixels is assumed
+* `col` - optionally specifies the foreground color for the checkbox. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Checkbox" is drawn. If not explicitly defined, the layout cell will not be filled with any color
+* `checked` - if set to `true`, the checkbox is considered as "checked", otherwise as "unchecked". During operation, this attribute may change its initial value in order to always reflect the current checkbox state
+
+Any other option is simply passed through to the layout library.
+
+> Note: in order to react on checkbox changes, just pass an event handler as `onChange` option.
 
 ## Analog Clock Faces ##
 
