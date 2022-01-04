@@ -749,7 +749,7 @@ and the following argument:
 * `height` - optionally specifies the requested minimum height of a layout cell for the "Radiobutton". If not explicitly defined, a height of 20 pixels is assumed
 * `col` - optionally specifies the foreground color for the radio button. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Radiobutton" is drawn. If not explicitly defined, the layout cell will not be filled with any color
-* `checked` - if set to `true`, the radio button is considered as "checked", otherwise as "unchecked". During operation, this attribute may change its initial value in order to always reflect the current radio button state. Note: the factory function itself does not check whether multiple radio buttons of the same group have initially been set to "checked" - this is only guaranteed during operation 
+* `checked` - if set to `true`, the radio button is considered as "checked", otherwise as "unchecked". During operation, this attribute may change its initial value in order to always reflect the current radio button state. Note: the factory function itself does not check whether multiple radio buttons of the same group have initially been set to "checked" - this is only guaranteed during operation whenever an unchecked radio button becomes checked
 * `onChange` - optionally specifies a function which is to be called whenever the radio button's state changes to "checked". This function has the signature `function onChange (Control)`
 
 Any other option is simply passed through to the layout library.
