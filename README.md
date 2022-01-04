@@ -683,7 +683,7 @@ The "Checkbox" component represents a small checkbox which may either be in a ch
 
 <img align="left" src="Layouting/CheckboxDemo.png">
 
-• [source code](Layouting/Checkbox.js) for the "Button" component itself<br>&nbsp;<br>
+• [source code](Layouting/Checkbox.js) for the "Checkbox" component itself<br>&nbsp;<br>
 • [source code](Layouting/CheckboxDemo.js) for the demonstrator<br>
 &nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/CheckboxDemo.js) or<br>
 &nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/CheckboxDemo.js)
@@ -715,6 +715,46 @@ and the following argument:
 Any other option is simply passed through to the layout library.
 
 > Tip: if you want to increase the touch area for a given checkbox and combine it with a textual or graphical label, simply pack both into a horizontal or vertical layout and add the following option to that layout: `onTouch:toggleInnerCheckbox`. From then on, touching anywhere within the layout area will toggle the contained checkbox. Note: do not pack multiple checkboxes into the same layout component with such a handler!
+
+### Radiobutton ###
+
+The "Radiobutton" component represents a small "radio button" that (normally) belongs to a "radio button group" in which at most one button may  be in a checked state while all others are unchecked (as illustrated by the following screenshot):
+
+<img align="left" src="Layouting/RadiobuttonDemo.png">
+
+• [source code](Layouting/Radiobutton.js) for the "Radiobutton" component itself<br>&nbsp;<br>
+• [source code](Layouting/RadiobuttonDemo.js) for the demonstrator<br>
+&nbsp; • to be run in [the emulator](https://www.espruino.com/ide?emulator&codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/RadiobuttonDemo.js) or<br>
+&nbsp; • to be run on [a real device](https://www.espruino.com/ide?codeurl=https://raw.githubusercontent.com/rozek/banglejs-2-activities/main/Layouting/RadiobuttonDemo.js)
+
+(the demonstrator also already uses the new "common settings" feature)
+
+<br clear="left">
+&nbsp;<br>
+
+`Radiobutton` is actually a factory function with the following signature:
+
+```
+Radiobutton(Options)
+```
+
+and the following argument:
+
+* `Options` - is an optional object containing named options (see below)
+
+`Options` is a JavaScript object basically containing the same options you normally specify when describing a component for the layout library (including `halign`, `valign`, `col`, `bgCol` etc.) with the following particularities:
+
+* `GroupName` - optionally specifies the name of a group of radio buttons within which at most one radio button may be "checked" while all others are "unchecked". Radio buttons belonging to the same group may be distributed throughout the whole currently active layout
+* `width` - optionally specifies the requested minimum width of a layout cell for the "Radiobutton". If not explicitly defined, a width of 20 pixels is assumed
+* `height` - optionally specifies the requested minimum height of a layout cell for the "Radiobutton". If not explicitly defined, a height of 20 pixels is assumed
+* `col` - optionally specifies the foreground color for the radio button. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
+* `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Radiobutton" is drawn. If not explicitly defined, the layout cell will not be filled with any color
+* `checked` - if set to `true`, the radio button is considered as "checked", otherwise as "unchecked". During operation, this attribute may change its initial value in order to always reflect the current radio button state
+* `onChange` - optionally specifies a function which is to be called whenever the radio button's state changes to "checked". This function has the signature `function onChange (Control)`
+
+Any other option is simply passed through to the layout library.
+
+> Tip: if you want to increase the touch area for a given radio button and combine it with a textual or graphical label, simply pack both into a horizontal or vertical layout and add the following option to that layout: `onTouch:checkInnerRadiobutton`. From then on, touching anywhere within the layout area will check the contained radio button. Note: do not pack multiple radio buttons into the same layout component with such a handler!
 
 ## Analog Clock Faces ##
 
