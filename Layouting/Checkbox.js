@@ -102,6 +102,10 @@
 
       Control.checked = ! Control.checked;
       renderCheckbox(Control);
+
+      if (typeof Control.onChange === 'function') {
+        Control.onChange(Control);
+      }
     }
 
     let Result = Object.assign((
