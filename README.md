@@ -572,6 +572,7 @@ and the following arguments:
 * `scale` - optionally specifies the factor, by which the given `Image` should be scaled before being drawn. If not explicitly defined, a scale factor of `1` is assumed
 * `rotate` - optionally specifies an agle (in radians) by which the given `Image` should be rotated before being drawn. If not explicitly defined, a rotation angle of `0` is assumed
 * `hilite` - optionally specifies whether the component should be "highlighted" or not (by default, it is not). If highlighted, the current theme's `fgH` and `bgH` highlighting colors are used to draw background and image
+* `col` - optionally specifies the color in which the given image is drawn. If not explicitly defined, `Image` uses the color which was configured as the current foreground color when the factory function was invoked
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual image is drawn. If not explicitly defined, the layout cell will not be filled with any color at all
 
 Any unknown option is simply passed through to the layout library.
