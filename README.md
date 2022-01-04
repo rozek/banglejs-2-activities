@@ -709,10 +709,9 @@ and the following argument:
 * `col` - optionally specifies the foreground color for the checkbox. If not explicitly defined, the `fg` color of the current theme at the time of drawing is used
 * `bgCol` - optionally specifies the color with which the background of a layout cell is filled before the actual "Checkbox" is drawn. If not explicitly defined, the layout cell will not be filled with any color
 * `checked` - if set to `true`, the checkbox is considered as "checked", otherwise as "unchecked". During operation, this attribute may change its initial value in order to always reflect the current checkbox state
+* `onChange` - optionally specifies a function which is to be called whenever the checkbox's state changes. This function has the signature `function onChange (Control)`
 
 Any other option is simply passed through to the layout library.
-
-> Note: in order to react on checkbox changes, just pass an event handler as `onChange` option.
 
 ## Analog Clock Faces ##
 
