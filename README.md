@@ -634,6 +634,22 @@ and the following arguments:
 
 Any other option is simply passed through to the layout library.
 
+"Drawable" callbacks should have the following signature:
+
+```
+  function drawXXX (DrawableX,DrawableY, DrawableWidth,DrawableHeight, Details) { ... }
+```
+
+with the following arguments:
+
+* `DrawableX` - contains the x coordinate of the "Drawable"s left upper corner after applying any border, padding and horizontal alignment
+* `DrawableY` - contains the y coordinate of the "Drawable"s left upper corner after applying any border, padding and vertical alignment
+* `DrawableWidth` - contains the configured width of this "Drawable". This width may be greater than that of the assigned layout cell - in that case, any attempts to draw outside that cell will be inhibited
+* `DrawableHeight` - contains the configured height of this "Drawable". This height may be greater than that of the assigned layout cell - in that case, any attempts to draw outside that cell will be inhibited
+* `Details` - contains the complete layout descriptor for the control (as provided by the layout library itself)
+
+Before the callback actually gets invoked, the "Drawable" sets the configured foreground and background colors and prepares a clipping rectangle as an intersection of the assigned layout cell and the requested drawing region.
+
 ### Button ###
 
 The "Button" component is the enhanced counterpart of the built-in "btn" layout type - with the following additional features:
