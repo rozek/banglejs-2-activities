@@ -395,9 +395,9 @@ Some user interfaces may not expect user interaction - but most of them do. Unti
 "Generic event dispatching" requires a few common functions and event-specific handler functions in any event consuming controls.
 
 ```
-  let activeLayout;
-
 /**** EventConsumerAtPoint ****/
+
+  let activeLayout;
 
   function EventConsumerAtPoint (HandlerName, x,y) {
     let Layout = (activeLayout || {}).l;
@@ -424,7 +424,7 @@ Some user interfaces may not expect user interaction - but most of them do. Unti
 
     return ConsumerIn(Layout);
   }
-  
+
 /**** dispatchTouchEvent ****/
 
   function dispatchTouchEvent (DefaultHandler) {
