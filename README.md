@@ -327,7 +327,7 @@ Display.render();
 
 Their output is nothing else but a plain JavaScript object as expected by the layout library. Most often, the `type` of such a description will be `custom` - in that case, the factory function also provides the appropriate `render` function.
 
-The following code (taken from the "Label" component) shows a typical implementation of such a "factory function":
+The following code (taken from an early version of the "Label" component) shows a typical implementation of such a "factory function":
 
 ```
   function Label (Text, Options) {
@@ -381,7 +381,7 @@ Using common settings is easy - as shown in the following (synthetic) example:
 let StdFont = { font:'12x20' };
 let legible = Object.assign({ col:'#000000', bgCol:'#FFFFFF' }, StdFont);
 let Display = new Layout(
-  Label('Test',{ common:commonSettings, bold:true })
+  Label('Test',{ common:legible, bold:true })
 );
 Display.render();
 ```
