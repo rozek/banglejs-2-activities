@@ -531,6 +531,8 @@ Any other option is simply passed through to the layout library without further 
 
 Implementation note: if `bold` is set to `true`, the given text is drawn four times - once at the original x,y coordinates, and then again with an offset of 1 pixel in any direction. This implementation is not really efficient, but produces a reasonably good looking effect independent of the currently used font.
 
+> Important note: if you plan to use fonts `6x15` or `12x20`, you will have to explicitly configure them as part of a `Label`s options since the implementation cannot retrieve the current setting if such a font has been set (this is due to restrictions within Espruino itself, see this [discussion in the forum](http://forum.espruino.com/conversations/371529/))
+
 ### Image ###
 
 The "Image" component is an enhanced counterpart of the built-in "img" layout type - with the following additional features:
