@@ -679,6 +679,8 @@ Any other option is simply passed through to the layout library.
 
 > Note: in order to react on button presses, just pass an event handler as `onTouch` option.
 
+> Important note: if you plan to use fonts `6x15` or `12x20` for `Button` controls, you will have to explicitly configure them as part of a button's options since the implementation cannot retrieve the current setting if such a font has been set (this is due to restrictions within Espruino itself, see this [discussion in the forum](http://forum.espruino.com/conversations/371529/))
+
 ### Checkbox ###
 
 The "Checkbox" component represents a small checkbox which may either be in a checked or an unchecked state (as illustrated by the following screenshot):
