@@ -637,7 +637,7 @@ Any other option is simply passed through to the layout library.
 "Drawable" callbacks should have the following signature:
 
 ```
-  function drawXXX (DrawableX,DrawableY, DrawableWidth,DrawableHeight, Details) { ... }
+function (DrawableX,DrawableY, DrawableWidth,DrawableHeight, Details) { ... }
 ```
 
 with the following arguments:
