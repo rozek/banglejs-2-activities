@@ -107,7 +107,11 @@
 
       let TextMetrics;
       if (! Result.width || ! Result.height) {
-        if (Options.font != null) { g.setFont(Options.font); }
+        if (Result.font == null) {
+          Result.font = g.getFont();
+        } else {
+          g.setFont(Result.font);
+        }
         TextMetrics = g.stringMetrics(Result.label);
       }
 
