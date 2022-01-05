@@ -648,7 +648,7 @@ with the following arguments:
 * `DrawableHeight` - contains the *configured* height of this "Drawable". This height may be greater than that of the assigned layout cell - in that case, any attempts to draw outside that cell will be inhibited
 * `Details` - contains the complete layout descriptor for the control (as provided by the layout library itself)
 
-Before the callback actually gets invoked, the "Drawable" sets the configured foreground and background colors and prepares a clipping rectangle as an intersection of the assigned layout cell and the requested drawing region.
+Before the callback actually gets invoked, the "Drawable" clears the whole layout cell (if a `bgCol` has been configured or `hilite` has been set to `true`), sets the configured foreground and background colors and prepares a clipping rectangle as an intersection of the assigned layout cell and the requested drawing region.
 
 ### Button ###
 
