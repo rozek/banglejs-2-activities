@@ -36,8 +36,9 @@
         g.setColor(BorderColor || Details.col || g.theme.fg);
 
         switch (Border) {
-          case 2:  g.drawRect(x+1,y+1, x+Width-2,y+Height-2);// no break here!
           case 1:  g.drawRect(x,y,     x+Width-1,y+Height-1); break;
+          case 2:  g.drawRect(x,y,     x+Width-1,y+Height-1);
+                   g.drawRect(x+1,y+1, x+Width-2,y+Height-2); break;
           default: g.fillPoly([
             x,y, x+Width,y, x+Width,y+Height, x,y+Height, x,y,
             x+Border,y+Border, x+Border,y+Height-Border,
