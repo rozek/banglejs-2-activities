@@ -318,7 +318,7 @@ The controls mentioned in this section deal with these pain points in the follow
 
 Using factory functions is easy - as shown in the following (synthetic) example:
 
-```
+```javascript
 let Display = new Layout(
   Label('Test',{ bold:true })
 );
@@ -329,7 +329,7 @@ Their output is nothing else but a plain JavaScript object as expected by the la
 
 The following code (taken from an early version of the "Label" component) shows a typical implementation of such a "factory function":
 
-```
+```javascript
   function Label (Text, Options) {
     function renderLabel (Details) {
       let halfWidth  = Details.w/2, xAlignment = Details.halign || 0;
@@ -377,7 +377,7 @@ It supports an `Options` argument for specific settings, takes care of "common s
 
 Using common settings is easy - as shown in the following (synthetic) example:
 
-```
+```javascript
 let StdFont = { font:'12x20' };
 let legible = Object.assign({ col:'#000000', bgCol:'#FFFFFF' }, StdFont);
 let Display = new Layout(
@@ -394,7 +394,7 @@ Some user interfaces may not expect user interaction - but most of them do. Unti
 
 "Generic event dispatching" requires a few common functions and event-specific handler functions in any event consuming controls.
 
-```
+```javascript
 /**** EventConsumerAtPoint ****/
 
   let activeLayout;
@@ -466,7 +466,7 @@ Some user interfaces may not expect user interaction - but most of them do. Unti
 
 After executing the code from above, event handling becomes really easy:
 
-```
+```javascript
   let Layout = require('Layout');
   let activeLayout = new Layout({
     type:'txt', label:'Touch here', id:'Test',
@@ -504,7 +504,7 @@ The following screenshot illustrates many of these features:
 
 `Label` is actually a factory function with the following signature:
 
-```
+```javascript
 Label(Text, Options)
 ```
 
@@ -559,7 +559,7 @@ The following screenshot illustrates many of these features:
 
 `Image` is actually a factory function with the following signature:
 
-```
+```javascript
 Image(Image, Options)
 ```
 
@@ -609,7 +609,7 @@ The following screenshot illustrates many of these features:
 
 `Drawable` is actually a factory function with the following signature:
 
-```
+```javascript
 Drawable(Callback, Options)
 ```
 
@@ -636,7 +636,7 @@ Any other option is simply passed through to the layout library.
 
 "Drawable" callbacks should have the following signature:
 
-```
+```javascript
 function (DrawableX,DrawableY, DrawableWidth,DrawableHeight, Details) { ... }
 ```
 
@@ -674,7 +674,7 @@ The following screenshot illustrates many of these features:
 
 `Button` is actually a factory function with the following signature:
 
-```
+```javascript
 Button(Text, Options)
 ```
 
@@ -715,7 +715,7 @@ The "Checkbox" component represents a small checkbox which may either be in a ch
 
 `Checkbox` is actually a factory function with the following signature:
 
-```
+```javascript
 Checkbox(Options)
 ```
 
@@ -754,7 +754,7 @@ The "Radiobutton" component represents a small "radio button" that (normally) be
 
 `Radiobutton` is actually a factory function with the following signature:
 
-```
+```javascript
 Radiobutton(Options)
 ```
 
@@ -944,7 +944,7 @@ The need to draw rectangles with rounded corners arose while developing an app w
 
 `drawRoundedRect` has the signature
 
-```
+```javascript
 g.drawRoundedRect(x1,y1, x2,y2, r);
 ```
 
@@ -976,7 +976,7 @@ with the following arguments:
 
 `fillRoundedRect` has the signature
 
-```
+```javascript
 g.fillRoundedRect(x1,y1, x2,y2, r);
 ```
 
@@ -1008,7 +1008,7 @@ As a by-product of the draw/fillRoundedRect development, `drawMoonPhase` was wri
 
 `drawMoonPhase` has the signature
 
-```
+```javascript
 drawMoonPhase(CenterX,CenterY, MoonRadius, leftFactor,rightFactor);
 ```
 
