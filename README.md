@@ -913,7 +913,7 @@ The referenced source code considers the currently configured "theme" (and may t
 
 ### Widget Handling ###
 
-Since clocks are shown all the time, they should probably take care of any installed "widgets" and display them properly alogn with the clock itself. If widgets occupy the corners of a Bangle screen only, not many code changes will be necessary - otherwise, the actual clock will have to be scaled down in order to cover that part of the screen only which is guaranteed to be free of widgets.
+Since clocks are shown all the time, they should probably take care of any installed "widgets" and display them properly along with the clock itself. If widgets occupy the corners of a Bangle screen only, not many code changes will be necessary - otherwise, the actual clock will have to be scaled down in order to cover that part of the screen only which is guaranteed to be free of widgets.
 
 <img align="left" src="ClockFaces/Dots-with-WidgetHandling.png">
 
